@@ -1,28 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://rahul0598.github.io/blog/reading/2022/</loc>
-    <lastmod>2022-02-14T06:51:54+00:00</lastmod>
-  </url><url>
-    <loc>https://rahul0598.github.io/blog/tags/linux/</loc>
-    <lastmod>2022-02-14T06:51:54+00:00</lastmod>
-  </url><url>
-    <loc>https://rahul0598.github.io/blog/posts/linux-journey/</loc>
-    <lastmod>2022-02-14T06:51:54+00:00</lastmod>
-  </url><url>
-    <loc>https://rahul0598.github.io/blog/posts/</loc>
-    <lastmod>2022-02-14T06:51:54+00:00</lastmod>
-  </url><url>
-    <loc>https://rahul0598.github.io/blog/</loc>
-    <lastmod>2022-02-14T06:51:54+00:00</lastmod>
-  </url><url>
-    <loc>https://rahul0598.github.io/blog/reading/</loc>
-    <lastmod>2022-02-14T06:51:54+00:00</lastmod>
-  </url><url>
-    <loc>https://rahul0598.github.io/blog/tags/</loc>
-    <lastmod>2022-02-14T06:51:54+00:00</lastmod>
-  </url><url>
-    <loc>https://rahul0598.github.io/blog/categories/</loc>
-  </url>
-</urlset>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    ><url>
+            <loc>https://hugodoit.pages.dev/reading/2022/</loc><lastmod>2022-02-14T06:51:54&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://hugodoit.pages.dev/</loc><lastmod>2022-02-14T06:51:54&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://hugodoit.pages.dev/tags/linux/</loc><lastmod>2022-02-14T06:51:54&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://hugodoit.pages.dev/linux-journey/</loc><lastmod>2022-02-14T06:51:54&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://hugodoit.pages.dev/posts/</loc><lastmod>2022-02-14T06:51:54&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://hugodoit.pages.dev/reading/</loc><lastmod>2022-02-14T06:51:54&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://hugodoit.pages.dev/tags/</loc><lastmod>2022-02-14T06:51:54&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://hugodoit.pages.dev/authors/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://hugodoit.pages.dev/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://hugodoit.pages.dev/series/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
