@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Sleep - Tag - Devajji&#39;s Blog</title>
+        <link>https://rahul0598.github.io/blog/tags/sleep/</link>
+        <description>Sleep - Tag - Devajji&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>devajjir@gmail.com (Rahul Devajji)</managingEditor>
+            <webMaster>devajjir@gmail.com (Rahul Devajji)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Sep 2022 09:51:54 &#43;0000</lastBuildDate><atom:link href="https://rahul0598.github.io/blog/tags/sleep/" rel="self" type="application/rss+xml" /><item>
+    <title>Behavior Change</title>
+    <link>https://rahul0598.github.io/blog/i507/</link>
+    <pubDate>Tue, 20 Sep 2022 09:51:54 &#43;0000</pubDate><author>
+        <name>Me</name>
+    </author><guid>https://rahul0598.github.io/blog/i507/</guid>
+    <description><![CDATA[Behavior change refers to efforts put in place to change people&rsquo;s personal habits and attitudes, to prevent disease [1].
+As a part of I507, I was tasked to use a health monitoring application and change a behavior. The idea was to understand what it takes to change a behavior so that we can design better applications for other people.
+In the context of Health (the topic of our class), behavior refers to a person&rsquo;s beliefs and actions regarding their health and well-being.]]></description>
+</item></channel>
+</rss>
