@@ -7,14 +7,13 @@
             <webMaster>devajjir@gmail.com (Rahul Devajji)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Sep 2022 09:51:54 &#43;0000</lastBuildDate>
             <atom:link href="https://rahul0598.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Behavior Change</title>
+    <title>Charting Change</title>
     <link>https://rahul0598.github.io/blog/i507/</link>
     <pubDate>Tue, 20 Sep 2022 09:51:54 &#43;0000</pubDate><author>
         <name>Rahul Devajji</name>
     </author><guid>https://rahul0598.github.io/blog/i507/</guid>
-    <description><![CDATA[Behavior change refers to efforts put in place to change people&rsquo;s personal habits and attitudes, to prevent disease [1].
-As a part of I507, I was tasked to use a health monitoring application and change a behavior. The idea was to understand what it takes to change a behavior so that we can design better applications for other people.
-In the context of Health (the topic of our class), behavior refers to a person&rsquo;s beliefs and actions regarding their health and well-being.]]></description>
+    <description><![CDATA[What does it take to make a change in your behavior or lifestyle? What influences an individual&rsquo;s decisions to change a behavior? How long does it take to see results? Or, do you always see results when you make up your mind to change a habit you don&rsquo;t like?
+These are some of the questions I try to answer through this blog post by documenting my experience using a health monitoring application for a period of approximately 4 weeks.]]></description>
 </item><item>
     <title>Linux Journey</title>
     <link>https://rahul0598.github.io/blog/linux-journey/</link>
