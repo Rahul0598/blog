@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rahuldevajji/tags on rahuldevajji</title>
-    <link>/tags/</link>
+    <link>//rahuldevajji.com/tags/</link>
     <description>Recent content in rahuldevajji/tags on rahuldevajji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2023 — Rahul Devajji — All rights reserved.</copyright>
-    <lastBuildDate>Sun, 10 Apr 2022 02:56:07 -0400</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 02:56:07 -0400</lastBuildDate><atom:link href="//rahuldevajji.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>reading</title>
+      <link>//rahuldevajji.com/tags/reading/</link>
+      <pubDate>Mon, 14 Aug 2023 00:26:53 -0500</pubDate>
+      
+      <guid>//rahuldevajji.com/tags/reading/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>about_me</title>
-      <link>/tags/about_me/</link>
+      <link>//rahuldevajji.com/tags/about_me/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/about_me/</guid>
+      <guid>//rahuldevajji.com/tags/about_me/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>/tags/linux/</link>
+      <link>//rahuldevajji.com/tags/linux/</link>
       <pubDate>Mon, 14 Feb 2022 06:51:54 +0000</pubDate>
       
-      <guid>/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reading</title>
-      <link>/tags/reading/</link>
-      <pubDate>Thu, 09 Dec 2021 21:20:53 -0500</pubDate>
-      
-      <guid>/tags/reading/</guid>
+      <guid>//rahuldevajji.com/tags/linux/</guid>
       <description></description>
     </item>
     
