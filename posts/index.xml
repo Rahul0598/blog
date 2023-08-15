@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on rahuldevajji</title>
-    <link>/posts/</link>
+    <link>https://rahul0598.github.io/blog/posts/</link>
     <description>Recent content in Posts on rahuldevajji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2023 — Rahul Devajji — All rights reserved.</copyright>
-    <lastBuildDate>Mon, 14 Feb 2022 06:51:54 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Feb 2022 06:51:54 +0000</lastBuildDate><atom:link href="https://rahul0598.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Journey</title>
-      <link>/posts/linux-journey/</link>
+      <link>https://rahul0598.github.io/blog/posts/linux-journey/</link>
       <pubDate>Mon, 14 Feb 2022 06:51:54 +0000</pubDate>
       
-      <guid>/posts/linux-journey/</guid>
+      <guid>https://rahul0598.github.io/blog/posts/linux-journey/</guid>
       <description>I think it was year 1 of my undergraduate studies when I decided to switch to a Linux distribution. I wasn&amp;rsquo;t aware of the installation process or virtual machines or anything, so Mom asked the store owner to dual-boot the laptop with the latest Ubuntu distribution (16.04 at the time, 2016). The man however, did it reluctantly as Mom had haggled him into selling two 8 GB RAM sticks for the price of one.</description>
     </item>
     
