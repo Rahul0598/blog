@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about_me on rahuldevajji</title>
+    <link>http://localhost:1313/tags/about_me/</link>
+    <description>Recent content in about_me on rahuldevajji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2025 — Rahul Devajji — All rights reserved.</copyright>
+    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/about_me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>What am I up to right now? Research Assistant at the healthy cities lab Research on localized climate zone classification using Google Earth Engine Connect with me: Github LinkedIn Email at rdevajji (at) iu.edu </description>
+    </item>
+    
+    <item>
+      <title>rahuldevajji.com</title>
+      <link>http://localhost:1313/</link>
+      <pubDate>Fri, 16 May 2025 02:03:00 +0530</pubDate>
+      
+      <guid>http://localhost:1313/</guid>
+      <description>Hi, I&amp;rsquo;m Rahul And I&amp;rsquo;m an Informatics PhD. student at Indiana University Bloomington majoring in Health Informatics. I listen to podcasts and read a lot of sci-fi. I&amp;rsquo;m tracking all the books I&amp;rsquo;ve read recently here, hopefully I&amp;rsquo;ll also start writing about those books. I also write posts about general tech stuff on my blog.
+Quick links Browse by tags Books Connect with me: Github LinkedIn Email at rdevajji (at) iu.</description>
+    </item>
+    
+  </channel>
+</rss>
