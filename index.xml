@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2025 — Rahul Devajji — All rights reserved.</copyright>
-    <lastBuildDate>Fri, 16 May 2025 02:03:00 +0530</lastBuildDate><atom:link href="http://rahuldevajji.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://rahuldevajji.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Storm Tracking and the ISS</title>
+      <link>http://rahuldevajji.com/posts/storm-tracking-and-the-iss/</link>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://rahuldevajji.com/posts/storm-tracking-and-the-iss/</guid>
+      <description>When a hurricane is born deep in the tropics, it begins as a swirl, a twist of wind on a warm patch of the ocean. It is silent and invisible to us on the ground, but for the astronauts in space? It would be a sight to behold, and sometimes, a chance to act fast.
+Inception of a Storm Storms begin in the tropical oceans, where sea surface temperatures (SST) above 26.</description>
+    </item>
+    
     <item>
       <title>The Whale and the Reactor</title>
       <link>http://rahuldevajji.com/readings/whale-and-the-reactor/</link>
@@ -34,15 +44,6 @@ The Inevitable Steamroller Winner criticized the idea of technology as an unstop
       
       <guid>http://rahuldevajji.com/about/</guid>
       <description>I am developing an approach to urban heat resilience that bridges the gap between climate science, data-driven research, and community action. My work combines satellite imagery, urban morphology, in-situ and wearable sensor data, and machine learning to model and predict urban heat patterns. I integrate socio-economic, health, and meteorological data to understand the impacts of extreme heat on vulnerable populations. Through projects like Local Climate Zone classification and personal heat exposure studies, I aim to inform equitable and sustainable urban planning solutions.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://rahuldevajji.com/posts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rahuldevajji.com/posts/</guid>
-      <description></description>
     </item>
     
   </channel>
