@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://rahuldevajji.com/readings/</loc>
+    <lastmod>2025-07-24T00:44:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/readings/orbital/</loc>
+    <lastmod>2025-07-24T00:44:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/tags/philosophy/</loc>
+    <lastmod>2025-07-24T00:44:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/</loc>
+    <lastmod>2025-07-24T00:44:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/tags/science-fiction/</loc>
+    <lastmod>2025-07-24T00:44:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/tags/space/</loc>
+    <lastmod>2025-07-24T00:44:00+05:30</lastmod>
+  </url><url>
     <loc>http://rahuldevajji.com/posts/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/tags/gis/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://rahuldevajji.com/</loc>
-    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://rahuldevajji.com/posts/storm-tracking-and-the-iss/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/tags/ai/</loc>
-    <lastmod>2025-05-16T02:03:00+05:30</lastmod>
-  </url><url>
-    <loc>http://rahuldevajji.com/readings/</loc>
-    <lastmod>2025-05-16T02:03:00+05:30</lastmod>
-  </url><url>
-    <loc>http://rahuldevajji.com/tags/philosophy/</loc>
     <lastmod>2025-05-16T02:03:00+05:30</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/tags/technology/</loc>
