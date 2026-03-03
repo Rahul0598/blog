@@ -39,6 +39,9 @@
         <a href="/">rahuldevajji</a>
         <div class="header-menu">
             <a href="/about/">about</a> &nbsp;
+            <a href="/research/">research</a> &nbsp;
+            <a href="/publications/">publications</a> &nbsp;
+            <a href="/resume.pdf">cv</a> &nbsp;
             <a href="/posts/">posts</a> &nbsp;
             <a href="/tags/">tags</a> &nbsp;
             <a href="/readings/">readings</a> &nbsp;
@@ -52,41 +55,23 @@
             
 <div class="book-page">
     <div class="book-container">
-        <div class="book-header">
-            <h1>Orbital</h1>
-            
-            <h2 class="author">by Samantha Harvey</h2>
-            
-            
-            
-            
-            <div class="book-meta">
+        <div class="book-content">
+            <div class="book-text">
+                <h1>Orbital</h1>
+                
+                <h2 class="author">by Samantha Harvey</h2>
                 
                 
                 
-                <div class="date-read">
-                    <strong>Date Read:</strong> July 2025
-                </div>
                 
-            </div>
-        </div>
-        
-        <div class="book-content-wrapper">
-            
-            <div class="book-image-float">
-                <img src="/images/books/orbital.jpg" alt="Orbital" class="book-cover">
                 
-                <div class="book-links">
-                    
-                    
-                    
-                </div>
-            </div>
-            
-            
-            <div class="book-content">
-                <h1 id="orbital-a-view-from-above">Orbital: A View from Above</h1>
-<p><em>I finished the book, with some difficulty. Below is a real-time visualization of the ISS orbiting our planet, complete with city lights visible on the night side.</em></p>
+                
+                <div class="description">
+                    <h3>Description & Thoughts</h3>
+                    <h1 id="orbital-a-view-from-above">Orbital: A View from Above</h1>
+<p><em>I finished the book, with some difficulty.</em> This book reminded me of an event from my childhood. I might have been 5 years old when my mom tasked me with splitting almonds using a huge tailor&rsquo;s scissors. Naturally I sliced up a piece of my left index finger (whose mark I still carry today). After crying, and getting it bandaged, my father sat me in front of his laptop with Google Earth software showing Mars. It was cool piece of software which let you explore and zoom through the deep canyons of Mars, and gave you this feeling of endlessness.</p>
+<p>Reading this book gives you a similar experience but with earth. The author literally lists out everything you can see from the POV of astronauts in the space station. Like &ldquo;oh look there&rsquo;s lake Michigan! So cool!.&rdquo; It is pretty interesting for a few minutes, and then you get bored.</p>
+<p>Anyway, below is a real-time visualization of the ISS orbiting our planet, complete with city lights visible on the night side.</p>
 <div style="height: 600px; width: 100%; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; margin: 20px 0;">
 <iframe 
     src="/readings/iss_animation.html" 
@@ -99,6 +84,17 @@
 </div>
 <p><em>The visualization above shows the International Space Station&rsquo;s real-time position, tracked via API. Use your mouse to rotate the view and scroll to zoom in/out.</em></p>
 
+                </div>
+                
+                
+            </div>
+            
+            <div class="book-image">
+                
+                <img src="/images/books/orbital.jpg" alt="Orbital" class="book-cover">
+                
+                
+                
                 
                 
             </div>
@@ -112,16 +108,19 @@
 
 <style>
 .book-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-.book-header {
-    margin-bottom: 2rem;
+.book-content {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 3rem;
+    align-items: start;
 }
 
-.book-header h1 {
+.book-text h1 {
     margin-bottom: 0.5rem;
     color: #333;
 }
@@ -143,77 +142,18 @@
     margin-left: 0.5rem;
 }
 
-.book-meta {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1rem;
-}
-
 .genre, .date-read {
-    color: #555;
+    margin: 0.5rem 0;
 }
 
-.book-content-wrapper {
-    position: relative;
+.description {
+    margin-top: 2rem;
 }
 
-.book-image-float {
-    float: right;
-    margin: 0 0 1rem 2rem;
-    width: 280px;
-    text-align: center;
-}
-
-.book-cover {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin-bottom: 1rem;
-}
-
-.book-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.book-link {
-    display: block;
-    padding: 0.5rem 1rem;
-    background: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.2s;
-    font-size: 0.9rem;
-}
-
-.book-link:hover {
-    background: #e9ecef;
-}
-
-.book-content {
-    text-align: justify;
-    line-height: 1.6;
-}
-
-.book-content h3 {
+.description h3 {
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
-    margin: 2rem 0 1rem 0;
-    clear: both;
-}
-
-.book-content p {
     margin-bottom: 1rem;
-}
-
-.quotes {
-    clear: both;
-    margin-top: 2rem;
 }
 
 .quotes blockquote {
@@ -224,10 +164,39 @@
     color: #555;
 }
 
+.book-image {
+    position: sticky;
+    top: 2rem;
+}
+
+.book-cover {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.goodreads-link, .amazon-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.goodreads-link:hover, .amazon-link:hover {
+    background: #e9ecef;
+}
+
 .navigation {
     margin-top: 2rem;
     text-align: center;
-    clear: both;
 }
 
 .back-link {
@@ -235,36 +204,37 @@
     text-decoration: none;
 }
 
- 
-@media (max-width: 768px) {
-    .book-image-float {
-        float: none;
-        margin: 0 auto 2rem auto;
-        width: 200px;
-    }
-    
-    .book-cover {
-        max-width: 200px;
-    }
-    
-    .book-meta {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+.no-image-placeholder {
+    width: 100%;
+    height: 400px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    margin-bottom: 1rem;
 }
 
-@media (max-width: 480px) {
-    .book-container {
-        padding: 1rem;
+.placeholder-content {
+    text-align: center;
+    color: #666;
+}
+
+
+@media (max-width: 768px) {
+    .book-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
-    .book-image-float {
-        width: 150px;
-        margin: 0 auto 1rem auto;
+    .book-image {
+        order: -1;
+        text-align: center;
     }
     
     .book-cover {
-        max-width: 150px;
+        max-width: 250px;
     }
 }
 </style>
