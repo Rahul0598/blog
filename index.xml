@@ -81,8 +81,8 @@ The Inevitable Steamroller Winner criticized the idea of technology as an unstop
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rahuldevajji.com/research/</guid>
-      <description>I am a PhD researcher in Informatics at Indiana University&amp;rsquo;s Healthy Cities Lab, advised by Dr. Dana Habeeb. My research sits at the intersection of urban climate science, geospatial machine learning, and public health — with a focus on understanding how the built environment shapes heat exposure and vulnerability for city residents.
-Research Interests Urban Heat &amp;amp; Climate - Microclimate variability, urban heat islands, Local Climate Zone (LCZ) mapping, and the role of urban morphology in shaping surface and near-surface temperatures.</description>
+      <description>I am a PhD researcher in Informatics at Indiana University&amp;rsquo;s Healthy Cities Lab, advised by Dr. Dana Habeeb. My work sits at the intersection of urban climate science, geospatial machine learning, and public health. In simple terms: I study where heat concentrates in cities, who is the most vulnerable, and how we can build practical tools to reduce risk.
+Current Projects Urban Representation Learning for Temperature Prediction I am developing models to predict hourly 10m near-surface air temperature across entire cities using sparse in-situ sensors.</description>
     </item>
     
   </channel>
