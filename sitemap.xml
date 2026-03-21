@@ -2,10 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://rahuldevajji.com/readings/</loc>
-    <lastmod>2026-01-03T02:03:00+05:30</lastmod>
+    <loc>http://rahuldevajji.com/posts/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/posts/where-san-francisco-airbnb-listings-offer-ac/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/tags/data-viz/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/tags/gis/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/readings/</loc>
     <lastmod>2026-01-03T02:03:00+05:30</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/tags/romance/</loc>
@@ -40,12 +52,6 @@
   </url><url>
     <loc>http://rahuldevajji.com/tags/space/</loc>
     <lastmod>2025-07-24T00:44:00+05:30</lastmod>
-  </url><url>
-    <loc>http://rahuldevajji.com/posts/</loc>
-    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://rahuldevajji.com/tags/gis/</loc>
-    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/posts/storm-tracking-and-the-iss/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>

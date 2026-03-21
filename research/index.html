@@ -30,6 +30,68 @@
 <meta name="theme-color" content="#33b884">
 
 
+<style>
+  article > h2 {
+    margin-top: 2.75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #d6ddd8;
+    letter-spacing: 0.02em;
+  }
+
+  article > h2:first-of-type {
+    margin-top: 2rem;
+  }
+
+  article > h3 {
+    margin-top: 1.75rem;
+  }
+
+  .research-card {
+    margin: 1.25rem 0;
+    padding: 1rem 1.1rem;
+    background: linear-gradient(180deg, #fbfcfb 0%, #f4f8f6 100%);
+    border: 1px solid #d8e2dc;
+    border-left: 4px solid #33b884;
+    border-radius: 10px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  }
+
+  .research-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.65rem;
+    font-size: 1.05rem;
+  }
+
+  .research-card p {
+    margin-bottom: 0;
+  }
+
+  article h3 + p,
+  article h3 + ul,
+  article h3 + table {
+    margin-top: 0.45rem;
+  }
+
+  article hr {
+    margin: 2.4rem 0 2rem;
+    border: 0;
+    border-top: 1px solid #d6ddd8;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .research-card {
+      padding: 0.9rem 0.85rem;
+      margin: 1rem 0;
+    }
+
+    article > h2 {
+      margin-top: 2.2rem;
+    }
+  }
+</style>
+
+
+
 
 </head>
 
@@ -56,19 +118,27 @@
 </header>
 <article>
     <p>I am a PhD researcher in Informatics at Indiana University&rsquo;s <a href="https://healthycities.sice.indiana.edu">Healthy Cities Lab</a>, advised by Dr. Dana Habeeb. My work sits at the intersection of <strong>urban climate science</strong>, <strong>geospatial machine learning</strong>, and <strong>public health</strong>. In simple terms: I study where heat concentrates in cities, who is the most vulnerable, and how we can build practical tools to reduce risk.</p>
-<hr>
 <h2 id="current-projects">Current Projects</h2>
+<div class="research-card">
 <h3 id="urban-representation-learning-for-temperature-prediction">Urban Representation Learning for Temperature Prediction</h3>
 <p>I am developing models to predict hourly 10m near-surface air temperature across entire cities using sparse in-situ sensors. This work uses precomputed Earth observation embeddings from Google&rsquo;s AEF foundation model to represent urban context, reduce manual feature engineering, and improve transfer across cities.</p>
+</div>
+<div class="research-card">
 <h3 id="local-climate-zone-lcz-classification">Local Climate Zone (LCZ) Classification</h3>
 <p>I built a multi-modal framework to classify urban environments into standardized LCZs using decision tree ensembles and neural network architectures on Google Earth Engine. The system includes end-to-end feature engineering, CNN-based feature extraction, and validation against hyperlocal sensor measurements. <a href="https://iu.maps.arcgis.com/home/item.html?id=22673fb225b844a38c2cb59e07944fe9">Classified imagery on ArcGIS</a>. <em>(Manuscript under review)</em></p>
+</div>
+<div class="research-card">
 <h3 id="heat-health-analysis">Heat-Health Analysis</h3>
 <p>I use spatiotemporal models to analyze heat-related emergency department visits in two Midwest communities. This work integrates hospital records, weather observations, and census socio-economic data in R to quantify exposure thresholds and demographic vulnerability patterns.</p>
+</div>
+<div class="research-card">
 <h3 id="heat-vulnerability-dashboard">Heat Vulnerability Dashboard</h3>
 <p>I co-developed a municipal decision-support platform for extreme heat planning. It uses PCA-based index construction across socio-economic, health, and environmental indicators to produce a Heat Vulnerability Index (HVI), delivered through a public-facing interactive web interface. <a href="https://healthycities.luddy.indiana.edu/beattheheat/hvmt/richmond.html">Live dashboard (Richmond, IN)</a></p>
+</div>
+<div class="research-card">
 <h3 id="urban-sensor-network--real-time-dashboard">Urban Sensor Network &amp; Real-Time Dashboard</h3>
 <p>I helped site and deploy a city-wide distributed temperature sensor network informed by LCZ outputs and urban form analysis. I also built a real-time streaming dashboard (Flask API + Chart.js) to visualize in-situ measurements from across the network. <a href="https://healthycities.luddy.indiana.edu/sensor/city.html">Live dashboard</a></p>
-<hr>
+</div>
 <h2 id="publications">Publications</h2>
 <p><a href="/resume.pdf">Download CV (PDF)</a> · <a href="https://scholar.google.com/citations?hl=en&amp;user=q6LkEwgAAAAJ">Google Scholar</a></p>
 <h3 id="journal-articles">Journal Articles</h3>
@@ -84,7 +154,6 @@
 <p><strong>Devajji, R.</strong> (2025). SDG 13.3 and Early Warning Systems (EWS): AI in Extreme Heat Resilience. <em>AICTE ATAL Faculty Development Program, RNS Institute of Technology (RNSIT), Bengaluru</em> (3-hour invited session; alma mater).</p>
 <h3 id="grants-awarded">Grants Awarded</h3>
 <p><strong>Nick Polak and Rahul Devajji</strong> (2023-2024): <a href="https://environment.indiana.edu/academics/scholarships/srdg.html#:~:text=Nick%20Polak%20and%20Rahul%20Devajji%3A%20Environmental%20sensing%20for%20extreme%20heat" target="_blank" rel="noopener noreferrer">Sustainability Research and Development Grant (SRDG): Environmental sensing for extreme heat</a> ($10,000)</p>
-<hr>
 <h2 id="tools--methods">Tools &amp; Methods</h2>
 <table>
 <thead>

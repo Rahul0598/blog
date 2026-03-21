@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta lang="en">
+
+    <title>AAG 2026 and AirBnBs without AC </title>
+
+    <style>*{box-sizing:border-box}body{margin:40px auto;max-width:800px;line-height:1.6;font-size:16px;color:#444;font-family:sans-serif;padding:0 10px}h1,h2,h3{line-height:1.2;font-family:sans-serif;color:#444}div.header h1{padding-top:0;padding-bottom:8px;margin-bottom:24px;font-size:16px;font-weight:400;border-bottom:1px solid}.header-menu{float:right}ul.pagination{list-style-type:none;text-align:center;padding:0}ul.pagination>li{padding:0 8px;display:inline-block}div.footer{border-top:1px solid;text-align:center}img{max-width:100%;max-height:100%;display:block;margin-left:auto;margin-right:auto}button{border:none;background:0 0;border-radius:5px}button:hover{background:#f1f1f1}table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}td,th{border:1px solid #444;padding:.5rem;text-align:left}@media only screen and (max-width:1450px){#back_to_top{visibility:visible!important}#toc{display:none}}.katex-display>.katex{overflow:auto hidden}.katex .katex-html>.newline{display:block;padding-bottom:.25em;padding-top:.25em}#toc{position:fixed;top:40px;right:0;padding-right:10%;line-height:1.4em;max-width:30%;margin:auto}#back_to_top{position:fixed;top:10px;right:10px;width:100px;visibility:hidden}blockquote{background:#f1f1f1;border-left:4px solid #ccc;padding-left:8px}code:not([class*=language-]){border-radius:.25rem;padding:.1rem;background-color:#f8f8f8;color:#863109}code{width:100px;overflow:auto;word-wrap:normal;white-space:pre;text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}p+ul,p+ol,ul+ol,ol+ul{margin-top:-10px}ul,ol,li{padding-left:.5 em}a.footnote-ref::before{content:'['}a.footnote-ref::after{content:']'}
+
+
+
+
+
+    </style>
+
+    
+
+    
+
+    
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#33b884">
+<meta name="msapplication-TileColor" content="#33b884">
+<meta name="theme-color" content="#33b884">
+
+
+
+
+<style>
+  .full-width-embed {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, calc(100vw - 32px));
+    max-width: none;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .full-width-embed {
+      width: 100%;
+      left: auto;
+      transform: none;
+    }
+  }
+</style>
+
+
+</head>
+
+<body>
+<div class="header">
+    <h1>
+        <a href="/">rahuldevajji</a>
+        <div class="header-menu">
+            <a href="/research/">research</a> &nbsp;
+            <a href="/resume.pdf">cv</a> &nbsp;
+            <a href="/posts/">posts</a> &nbsp;
+            <a href="/readings/">books</a> &nbsp;
+        </div>
+    </h1>
+</div>
+
+<div id="content">
+        
+            <aside id="back_to_top">
+            <a href="#">Back to top</a>
+            </aside>
+        
+        <section>
+            
+        <header>
+    <h1>AAG 2026 and AirBnBs without AC</h1>
+    
+    
+
+
+
+<div class="post-meta">Date:
+    <time datetime=" 2026-03-21">Mar 21, 2026</time>,&nbsp;Last Modified:
+    <time datetime=" 2026-03-21">Mar 21, 2026</time>
+    <br>
+    Tags &#x5b;
+    <a href="http://rahuldevajji.com/tags/gis/">gis</a>
+    <a href="http://rahuldevajji.com/tags/data-viz/">data-viz</a>
+    &#x5d;
+</div>
+
+    
+</header>
+<article>
+    <p>I was in San Francisco between March 17 and 21 for the annual American Association of Geographers (AAG) conference, and I stayed in an Airbnb. I was excited to stay in sunny California, and escape the Indiana&rsquo;s snowy weather, but was surprised by how much hotter SF was in comparison. I was greeted by a &ldquo;heat advisory&rdquo; in effect until the end of the week.</p>
+<p>I loved walking along the streets, enjoying tram rides, even though I was sweaty outdoors. The harder part was indoors. My room did not have air conditioning, which meant uncomfortably warm nights. Opening the window didn’t help as there was little wind, and the surrounding urban form (dense mid/high-rise buildings, what we’d classify as compact LCZs) seemed to trap heat. The only real relief was a small portable fan balanced on a chair and pointed at the bed.</p>
+<p>Observations from KSFO, the weather station at San Francisco International Airport, show just how anomalous the week was. Daily highs reached 82°F on March 17, 80°F on March 18, 81°F on March 19, and 88°F on March 20. The March normal high at SFO is 63.4°F, so those days were roughly 17°F to 25°F warmer than a typical March day. Peak “feels like” temperatures during the period climbed above 85°F.</p>
+<p>That experience made me wonder how many short-term rentals in San Francisco actually advertise cooling. So I built this interactive map to examine where Airbnb listings say they offer air conditioning, where they do not, and where they mention fans instead. You can pan around the city, filter listings, search by name or Airbnb URL, and click any point to inspect the listing details. You can also open the visualization directly in a full browser tab <a href="/posts/airbnb-ac-sf/sf-airbnb-ac-map.html">here</a>.</p>
+<div class="full-width-embed" style="height: 780px; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin: 24px 0;">
+<iframe
+    src="/posts/airbnb-ac-sf/sf-airbnb-ac-map.html"
+    width="100%"
+    height="100%"
+    frameborder="0"
+    style="border: none;">
+    Your browser does not support iframes. Please visit the <a href="/posts/airbnb-ac-sf/sf-airbnb-ac-map.html">interactive map</a> directly.
+</iframe>
+</div>
+<p>The citywide numbers proved my suspicions. Of 7,535 San Francisco Airbnb listings in the dataset, 5,508 listings, or 73.1%, do not advertise air conditioning. Only 2,027 listings, or 26.9%, do. Another 1,243 listings mention a portable fan, and 1,519 mention some kind of fan amenity. Even so, 4,245 listings, or 56.3%, advertise neither AC nor any fan at all.</p>
+<p>That matters because heat risk is not experienced evenly across a city. A single airport station such as KSFO can tell us that a week was unusually hot, but it cannot tell us how that heat was experienced from block to block, building to building. Urban form, street geometry, wind exposure, building materials, and access to indoor cooling all shape what heat actually feels like on the ground. That is why assumptions like “San Francisco is cool” break down quickly during anomalous events. During a hot week, the difference between a shaded, breezy location and a dense block with little ventilation can be the difference between manageable discomfort and unsafe indoor conditions.</p>
+<p>Two things seem increasingly clear. First, we need more hyperlocal temperature mapping to understand neighborhood-scale heat exposure. Second, cooling access is no longer a luxury amenity. In dense urban areas, the absence of AC, or even adequate ventilation, can turn a short heat event into a serious problem.</p>
+<p>This is something I’ve been thinking about more through my work on urban temperature modeling: how do we move from coarse, city-wide averages to actionable, building-scale insights? Because ultimately, heat isn’t experienced as an average—it’s experienced where you are.</p>
+
+</article>
+
+
+
+        </section>
+    </div>
+<div class="footer">
+    
+    
+    <div class="footer-links">
+        <a href="https://github.com/Rahul0598">GitHub</a> &nbsp;
+        <a href="https://github.com/ihasdapie/bettermotherfuckinghugowebsite/">Theme</a> &nbsp;
+    </div>
+    
+
+    
+    
+    <div class="copyright">© 2026 — Rahul Devajji — All rights reserved.</div>
+    
+
+    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+<div id="wcb" class="carbonbadge"></div>
+
+
+</div>
+
+</body>
+
+</html>
