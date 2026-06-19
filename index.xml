@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rahuldevajji.com on rahuldevajji</title>
+    <title>Rahul Devajji on rahuldevajji</title>
     <link>http://rahuldevajji.com/</link>
-    <description>Recent content in rahuldevajji.com on rahuldevajji</description>
+    <description>Recent content in Rahul Devajji on rahuldevajji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2026 — Rahul Devajji — All rights reserved.</copyright>
-    <lastBuildDate>Sat, 21 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://rahuldevajji.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Jun 2026 02:03:00 +0530</lastBuildDate><atom:link href="http://rahuldevajji.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Diary of Frida Kahlo: An Intimate Self-Portrait</title>
+      <link>http://rahuldevajji.com/readings/the-diary-of-frida-kahlo/</link>
+      <pubDate>Sun, 07 Jun 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/readings/the-diary-of-frida-kahlo/</guid>
+      <description>The introductions are dense, but once you get through them you can peer into Frida Kahlo&amp;rsquo;s mind. Seeing her artistic process and raw sketches is wonderful!. Some of her drafts would probably be works of art even today.</description>
+    </item>
+    
+    <item>
+      <title>Garden Spells</title>
+      <link>http://rahuldevajji.com/readings/garden-spells/</link>
+      <pubDate>Mon, 13 Apr 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/readings/garden-spells/</guid>
+      <description>This is such a nice, heartwarming book! It was a short read, and I love a story with a happy ending. While I usually find it hard to read books that deal with trauma, I appreciated how gently this book handled those heavier themes without making it overwhelming. I would love to read more of such comforting and hopeful books.</description>
+    </item>
+    
+    <item>
+      <title>Semiosis</title>
+      <link>http://rahuldevajji.com/readings/semiosis/</link>
+      <pubDate>Mon, 13 Apr 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/readings/semiosis/</guid>
+      <description>The concept of first contact, but with plants as the dominant life form instead of animals, is quite interesting. It instantly reminded me of Tchaikovsky&amp;rsquo;s &amp;ldquo;Children of Time,&amp;rdquo; which I absolutely loved. Reading about plants communicating with each other and sharing resources is interesting. But I would have loved for it to have dived deeper into the science of how these alien plants work. I think there is a line between being science-heavy, like the &amp;ldquo;Three Body Problem&amp;rdquo; trilogy (making it read like a memorandum), and being a fantasy book where all the &amp;ldquo;science&amp;rdquo; is just make-believe, and I wish this book had explored more of the plant physiology.</description>
+    </item>
+    
     <item>
       <title>AAG 2026 and AirBnBs without AC</title>
       <link>http://rahuldevajji.com/posts/where-san-francisco-airbnb-listings-offer-ac/</link>
@@ -16,6 +43,24 @@
       <guid>http://rahuldevajji.com/posts/where-san-francisco-airbnb-listings-offer-ac/</guid>
       <description>I was in San Francisco between March 17 and 21 for the annual American Association of Geographers (AAG) conference, and I stayed in an Airbnb. I was excited to stay in sunny California, and escape the Indiana&amp;rsquo;s snowy weather, but was surprised by how much hotter SF was in comparison. I was greeted by a &amp;ldquo;heat advisory&amp;rdquo; in effect until the end of the week.
 I loved walking along the streets, enjoying tram rides, even though I was sweaty outdoors.</description>
+    </item>
+    
+    <item>
+      <title>A Cloud a Day</title>
+      <link>http://rahuldevajji.com/readings/a-cloud-a-day/</link>
+      <pubDate>Wed, 07 Jan 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/readings/a-cloud-a-day/</guid>
+      <description>This book is delightful! It made me look up at the sky more. It&amp;rsquo;s a perfect road‑trip companion, because it will keep you occupied trying to identify everything you see in the sky.</description>
+    </item>
+    
+    <item>
+      <title>Land of Mirrors</title>
+      <link>http://rahuldevajji.com/readings/land-of-mirrors/</link>
+      <pubDate>Wed, 07 Jan 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/readings/land-of-mirrors/</guid>
+      <description>I read this on a flight back from the Middle East. I felt like a child, fascinated by the book&amp;rsquo;s wonderful artwork. At times, I sensed a deeper message that I was probably missing. I appreciated the depictions of loneliness, but I suppose I missed some of the deeper philosophical themes. When I got back, I did a quick Google search and found that others felt the same, or suggested the author intended the book to be open to multiple interpretations.</description>
     </item>
     
     <item>
@@ -91,8 +136,8 @@ The Inevitable Steamroller Winner criticized the idea of technology as an unstop
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rahuldevajji.com/research/</guid>
-      <description>I am a PhD researcher in Informatics at Indiana University&amp;rsquo;s Healthy Cities Lab, advised by Dr. Dana Habeeb. My work sits at the intersection of urban climate science, geospatial machine learning, and public health. In simple terms: I study where heat concentrates in cities, who is the most vulnerable, and how we can build practical tools to reduce risk.
-Current Projects Urban Representation Learning for Temperature Prediction I am developing models to predict hourly 10m near-surface air temperature across entire cities using sparse in-situ sensors.</description>
+      <description>I am a PhD researcher in Informatics at Indiana University&amp;rsquo;s Healthy Cities Lab, advised by Dr. Dana Habeeb. I use geospatial AI and public-health data to map urban heat risk and build tools cities can use.
+Current Work Temperature prediction: hourly citywide air-temperature models from sparse sensors and AEF embeddings. Local Climate Zones: LCZ classification in Google Earth Engine, validated against hyperlocal sensors. ArcGIS. Heat-health analysis: models of heat-related ED visits using hospital, weather, and census data.</description>
     </item>
     
   </channel>

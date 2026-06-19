@@ -22,6 +22,7 @@
     
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
@@ -29,63 +30,145 @@
 <meta name="msapplication-TileColor" content="#33b884">
 <meta name="theme-color" content="#33b884">
 
-
 <style>
-  article > h2 {
-    margin-top: 2.75rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid #d6ddd8;
-    letter-spacing: 0.02em;
+  body {
+    margin-top: 24px;
+    margin-bottom: 18px;
+    line-height: 1.48;
   }
 
-  article > h2:first-of-type {
-    margin-top: 2rem;
+  div.header h1 {
+    margin-bottom: 18px;
   }
 
-  article > h3 {
-    margin-top: 1.75rem;
-  }
-
-  .research-card {
-    margin: 1.25rem 0;
-    padding: 1rem 1.1rem;
-    background: linear-gradient(180deg, #fbfcfb 0%, #f4f8f6 100%);
-    border: 1px solid #d8e2dc;
-    border-left: 4px solid #33b884;
-    border-radius: 10px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
-  }
-
-  .research-card h3 {
+  section > header h1,
+  article h1:first-child {
     margin-top: 0;
-    margin-bottom: 0.65rem;
-    font-size: 1.05rem;
   }
 
-  .research-card p {
-    margin-bottom: 0;
+  p {
+    margin: 0.62rem 0;
   }
 
-  article h3 + p,
-  article h3 + ul,
-  article h3 + table {
+  div.footer {
+    margin-top: 1rem;
+    padding-top: 0.55rem;
+    font-size: 0.9rem;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .footer-meta {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.95rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-carbon {
+    display: flex;
+    justify-content: center;
     margin-top: 0.45rem;
   }
 
-  article hr {
-    margin: 2.4rem 0 2rem;
-    border: 0;
+  .footer-carbon #wcb {
+    margin: 0;
+  }
+</style>
+
+
+
+
+<style>
+  .research-columns {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+    gap: 1.1rem;
+    margin-top: 0.85rem;
+  }
+
+  .research-columns h2 {
+    margin: 0.15rem 0 0.45rem;
+    padding-top: 0.55rem;
     border-top: 1px solid #d6ddd8;
+    font-size: 1.08rem;
+  }
+
+  .research-columns section:first-child h2:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .research-list {
+    margin: 0;
+    padding-left: 1.05rem;
+    font-size: 0.94rem;
+    line-height: 1.42;
+  }
+
+  .research-list li {
+    margin: 0 0 0.42rem;
+  }
+
+  .research-columns p {
+    margin: 0 0 0.48rem;
+    font-size: 0.94rem;
+    line-height: 1.42;
+  }
+
+  .research-columns section > :last-child {
+    margin-bottom: 0;
+  }
+
+  .research-output-list {
+    columns: 2;
+    column-gap: 1.35rem;
+    margin: 0.72rem 0 0;
+    padding-left: 1.05rem;
+    border-top: 1px solid #d6ddd8;
+    padding-top: 0.58rem;
+    font-size: 0.8rem;
+    line-height: 1.22;
+  }
+
+  .research-output-list li {
+    break-inside: avoid;
+    margin: 0 0 0.32rem;
   }
 
   @media only screen and (max-width: 700px) {
-    .research-card {
-      padding: 0.9rem 0.85rem;
-      margin: 1rem 0;
+    .research-columns {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      margin-top: 0.65rem;
     }
 
-    article > h2 {
-      margin-top: 2.2rem;
+    .research-columns h2 {
+      margin-bottom: 0.32rem;
+      padding-top: 0.45rem;
+    }
+
+    .research-list,
+    .research-columns p {
+      font-size: 0.92rem;
+      line-height: 1.36;
+    }
+
+    .research-list li {
+      margin-bottom: 0.28rem;
+    }
+
+    .research-output-list {
+      columns: 1;
+      margin-top: 0.65rem;
+      padding-top: 0.55rem;
+      font-size: 0.78rem;
+      line-height: 1.22;
+    }
+
+    .research-output-list li {
+      margin-bottom: 0.28rem;
     }
   }
 </style>
@@ -117,94 +200,35 @@
     
 </header>
 <article>
-    <p>I am a PhD researcher in Informatics at Indiana University&rsquo;s <a href="https://healthycities.sice.indiana.edu">Healthy Cities Lab</a>, advised by Dr. Dana Habeeb. My work sits at the intersection of <strong>urban climate science</strong>, <strong>geospatial machine learning</strong>, and <strong>public health</strong>. In simple terms: I study where heat concentrates in cities, who is the most vulnerable, and how we can build practical tools to reduce risk.</p>
-<h2 id="current-projects">Current Projects</h2>
-<div class="research-card">
-<h3 id="urban-representation-learning-for-temperature-prediction">Urban Representation Learning for Temperature Prediction</h3>
-<p>I am developing models to predict hourly 10m near-surface air temperature across entire cities using sparse in-situ sensors. This work uses precomputed Earth observation embeddings from Google&rsquo;s AEF foundation model to represent urban context, reduce manual feature engineering, and improve transfer across cities.</p>
+    <p>I am a PhD researcher in Informatics at Indiana University&rsquo;s <a href="https://healthycities.sice.indiana.edu">Healthy Cities Lab</a>, advised by Dr. Dana Habeeb. I use geospatial AI and public-health data to map urban heat risk and build tools cities can use.</p>
+<div class="research-columns">
+  <section>
+    <h2>Current Work</h2>
+    <ul class="research-list">
+      <li><strong>Temperature prediction:</strong> hourly citywide air-temperature models from sparse sensors and AEF embeddings.</li>
+      <li><strong>Local Climate Zones:</strong> LCZ classification in Google Earth Engine, validated against hyperlocal sensors. <a href="https://iu.maps.arcgis.com/home/item.html?id=22673fb225b844a38c2cb59e07944fe9">ArcGIS</a>.</li>
+      <li><strong>Heat-health analysis:</strong> models of heat-related ED visits using hospital, weather, and census data.</li>
+      <li><strong>Heat planning tools:</strong> municipal HVI and sensor dashboards. <a href="https://healthycities.luddy.indiana.edu/beattheheat/hvmt/richmond.html">HVI</a> · <a href="https://healthycities.luddy.indiana.edu/sensor/city.html">sensors</a>.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Outputs</h2>
+    <p><a href="/resume.pdf">Download CV</a> · <a href="https://scholar.google.com/citations?hl=en&amp;user=q6LkEwgAAAAJ">Google Scholar</a></p>
+    <h2>Methods</h2>
+    <p>Earth observation, GIS, geospatial ML, spatial statistics, urban sensing, Python pipelines, and data apps.</p>
+  </section>
 </div>
-<div class="research-card">
-<h3 id="local-climate-zone-lcz-classification">Local Climate Zone (LCZ) Classification</h3>
-<p>I built a multi-modal framework to classify urban environments into standardized LCZs using decision tree ensembles and neural network architectures on Google Earth Engine. The system includes end-to-end feature engineering, CNN-based feature extraction, and validation against hyperlocal sensor measurements. <a href="https://iu.maps.arcgis.com/home/item.html?id=22673fb225b844a38c2cb59e07944fe9">Classified imagery on ArcGIS</a>. <em>(Manuscript under review)</em></p>
-</div>
-<div class="research-card">
-<h3 id="heat-health-analysis">Heat-Health Analysis</h3>
-<p>I use spatiotemporal models to analyze heat-related emergency department visits in two Midwest communities. This work integrates hospital records, weather observations, and census socio-economic data in R to quantify exposure thresholds and demographic vulnerability patterns.</p>
-</div>
-<div class="research-card">
-<h3 id="heat-vulnerability-dashboard">Heat Vulnerability Dashboard</h3>
-<p>I co-developed a municipal decision-support platform for extreme heat planning. It uses PCA-based index construction across socio-economic, health, and environmental indicators to produce a Heat Vulnerability Index (HVI), delivered through a public-facing interactive web interface. <a href="https://healthycities.luddy.indiana.edu/beattheheat/hvmt/richmond.html">Live dashboard (Richmond, IN)</a></p>
-</div>
-<div class="research-card">
-<h3 id="urban-sensor-network--real-time-dashboard">Urban Sensor Network &amp; Real-Time Dashboard</h3>
-<p>I helped site and deploy a city-wide distributed temperature sensor network informed by LCZ outputs and urban form analysis. I also built a real-time streaming dashboard (Flask API + Chart.js) to visualize in-situ measurements from across the network. <a href="https://healthycities.luddy.indiana.edu/sensor/city.html">Live dashboard</a></p>
-</div>
-<h2 id="publications">Publications</h2>
-<p><a href="/resume.pdf">Download CV (PDF)</a> · <a href="https://scholar.google.com/citations?hl=en&amp;user=q6LkEwgAAAAJ">Google Scholar</a></p>
-<h3 id="journal-articles">Journal Articles</h3>
-<p>Habeeb, D., <strong>Devajji, R.</strong>, et al. (2025). Design and Evaluation of Wearable Solar Radiation Shields for Enhanced Personal Heat Exposure Monitoring. <em>Sensors</em>, 25(3), 945.</p>
-<h3 id="conference-papers--presentations">Conference Papers &amp; Presentations</h3>
-<p><strong>Devajji, R.</strong>, Habeeb, D., &amp; Wilson, J. S. (2025). Extreme Heat and Health Impacts: A Study of Emergency Department Visits in Midwest Communities. <em>American Association of Geographers (AAG) Annual Meeting</em>.</p>
-<p>Habeeb, D., <strong>Devajji, R.</strong>, &amp; Wilson, J. (2025). Local Climate Zones Validation Utilizing Hyperlocal Near-Surface Air Temperature Data. <em>American Association of Geographers (AAG) Annual Meeting</em>.</p>
-<p><strong>Devajji, R.</strong> &amp; Habeeb, D. (2025). A Machine Learning Approach to Predicting Hyperlocal Temperature in the Built Environment. <em>Association of Collegiate Schools of Planning (ACSP) Annual Conference</em>.</p>
-<p>Habeeb, D., <strong>Devajji, R.</strong>, Subramanian, L., Davis, L., &amp; Gumaer, J. (2025). Heat Vulnerability Dashboard: A Decision Support Tool for Extreme Heat. <em>Association of Collegiate Schools of Planning (ACSP) Annual Conference</em>.</p>
-<p>Tu, H., <strong>Devajji, R.</strong>, &amp; Horan, T. (2025). Algorithmic Literacy and Digital Privacy in the US: An Exploratory Study Using Data Visualization. <em>IEEE International Conference on Advanced Data Visualization (ICAD)</em>.</p>
-<p>Habeeb, D., Polak, N., &amp; <strong>Devajji, R.</strong> (2024). Leveraging an Urban Environmental Sensing Network to Improve Extreme Heat Resilience. <em>IEEE International Green and Sustainable Computing Conference (IGSC)</em>.</p>
-<h3 id="invited-talks">Invited Talks</h3>
-<p><strong>Devajji, R.</strong> (2025). SDG 13.3 and Early Warning Systems (EWS): AI in Extreme Heat Resilience. <em>AICTE ATAL Faculty Development Program, RNS Institute of Technology (RNSIT), Bengaluru</em> (3-hour invited session; alma mater).</p>
-<h3 id="grants-awarded">Grants Awarded</h3>
-<p><strong>Nick Polak and Rahul Devajji</strong> (2023-2024): <a href="https://environment.indiana.edu/academics/scholarships/srdg.html#:~:text=Nick%20Polak%20and%20Rahul%20Devajji%3A%20Environmental%20sensing%20for%20extreme%20heat" target="_blank" rel="noopener noreferrer">Sustainability Research and Development Grant (SRDG): Environmental sensing for extreme heat</a> ($10,000)</p>
-<h2 id="tools--methods">Tools &amp; Methods</h2>
-<table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Tools</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Earth Observation</strong></td>
-<td>Google Earth Engine</td>
-</tr>
-<tr>
-<td><strong>Geospatial Analysis</strong></td>
-<td>GDAL, Rasterio, GeoPandas, PostGIS</td>
-</tr>
-<tr>
-<td><strong>GIS Platforms</strong></td>
-<td>QGIS, ArcGIS Pro, ArcPy, ESRI JS SDK</td>
-</tr>
-<tr>
-<td><strong>Machine Learning</strong></td>
-<td>Scikit-learn, PyTorch, Decision Tree Ensembles, CNNs</td>
-</tr>
-<tr>
-<td><strong>Spatial &amp; Statistical Modeling</strong></td>
-<td>R (GLM, spatial packages), time-series analysis</td>
-</tr>
-<tr>
-<td><strong>Urban Sensing</strong></td>
-<td>Distributed sensor networks, IoT environmental monitoring</td>
-</tr>
-<tr>
-<td><strong>Data Engineering</strong></td>
-<td>Python pipelines, PostgreSQL, ETL workflows</td>
-</tr>
-<tr>
-<td><strong>Visualization &amp; Apps</strong></td>
-<td>Plotly Dash, Flask API, Chart.js, Shiny, Tableau</td>
-</tr>
-<tr>
-<td><strong>Cloud &amp; Compute</strong></td>
-<td>Google Cloud Platform, HPC clusters, Docker</td>
-</tr>
-<tr>
-<td><strong>Reproducible Research</strong></td>
-<td>Git, GitHub, Jupyter, containerized workflows</td>
-</tr>
-</tbody>
-</table>
+<ul class="research-output-list">
+  <li><strong>Journal:</strong> Habeeb, D., <strong>Devajji, R.</strong>, Wilson, J., &amp; Byrne, A. (2026). Identifying local climate zones in two US Midwestern cities: a comparison of methods. <em>Computational Urban Science</em>, 6(1), 37.</li>
+  <li><strong>Journal:</strong> Habeeb, D., <strong>Devajji, R.</strong>, et al. (2025). Design and Evaluation of Wearable Solar Radiation Shields for Enhanced Personal Heat Exposure Monitoring. <em>Sensors</em>, 25(3), 945.</li>
+  <li><strong>CHI 2026:</strong> Habeeb, D., Subramanian, L., <strong>Devajji, R.</strong>, &amp; Polak, N. Publics, Place, and Sensors: Co-Designing Environmental Monitoring with a Community Orchard.</li>
+  <li><strong>AAG 2025:</strong> <strong>Devajji, R.</strong>, Habeeb, D., &amp; Wilson, J. S. Extreme Heat and Health Impacts: A Study of Emergency Department Visits in Midwest Communities.</li>
+  <li><strong>AAG 2025:</strong> Habeeb, D., <strong>Devajji, R.</strong>, &amp; Wilson, J. Local Climate Zones Validation Utilizing Hyperlocal Near-Surface Air Temperature Data.</li>
+  <li><strong>ACSP 2025:</strong> <strong>Devajji, R.</strong> &amp; Habeeb, D. A Machine Learning Approach to Predicting Hyperlocal Temperature in the Built Environment.</li>
+  <li><strong>ACSP 2025:</strong> Habeeb, D., <strong>Devajji, R.</strong>, Subramanian, L., Davis, L., &amp; Gumaer, J. Heat Vulnerability Dashboard: A Decision Support Tool for Extreme Heat.</li>
+  <li><strong>ICAD 2025:</strong> Tu, H., <strong>Devajji, R.</strong>, &amp; Horan, T. Algorithmic Literacy and Digital Privacy in the US: An Exploratory Study Using Data Visualization.</li>
+  <li><strong>IGSC 2024:</strong> Habeeb, D., Polak, N., &amp; <strong>Devajji, R.</strong> Leveraging an Urban Environmental Sensing Network to Improve Extreme Heat Resilience.</li>
+</ul>
 
 </article>
 
@@ -213,6 +237,7 @@
         </section>
     </div>
 <div class="footer">
+    <div class="footer-meta">
     
     
     <div class="footer-links">
@@ -225,10 +250,13 @@
     
     <div class="copyright">© 2026 — Rahul Devajji — All rights reserved.</div>
     
+    </div>
 
+    <div class="footer-carbon">
     <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 <div id="wcb" class="carbonbadge"></div>
 
+    </div>
 
 </div>
 

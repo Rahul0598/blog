@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta lang="en">
 
-    <title> </title>
+    <title>Posts </title>
 
     <style>*{box-sizing:border-box}body{margin:40px auto;max-width:800px;line-height:1.6;font-size:16px;color:#444;font-family:sans-serif;padding:0 10px}h1,h2,h3{line-height:1.2;font-family:sans-serif;color:#444}div.header h1{padding-top:0;padding-bottom:8px;margin-bottom:24px;font-size:16px;font-weight:400;border-bottom:1px solid}.header-menu{float:right}ul.pagination{list-style-type:none;text-align:center;padding:0}ul.pagination>li{padding:0 8px;display:inline-block}div.footer{border-top:1px solid;text-align:center}img{max-width:100%;max-height:100%;display:block;margin-left:auto;margin-right:auto}button{border:none;background:0 0;border-radius:5px}button:hover{background:#f1f1f1}table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}td,th{border:1px solid #444;padding:.5rem;text-align:left}@media only screen and (max-width:1450px){#back_to_top{visibility:visible!important}#toc{display:none}}.katex-display>.katex{overflow:auto hidden}.katex .katex-html>.newline{display:block;padding-bottom:.25em;padding-top:.25em}#toc{position:fixed;top:40px;right:0;padding-right:10%;line-height:1.4em;max-width:30%;margin:auto}#back_to_top{position:fixed;top:10px;right:10px;width:100px;visibility:hidden}blockquote{background:#f1f1f1;border-left:4px solid #ccc;padding-left:8px}code:not([class*=language-]){border-radius:.25rem;padding:.1rem;background-color:#f8f8f8;color:#863109}code{width:100px;overflow:auto;word-wrap:normal;white-space:pre;text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}p+ul,p+ol,ul+ol,ol+ul{margin-top:-10px}ul,ol,li{padding-left:.5 em}a.footnote-ref::before{content:'['}a.footnote-ref::after{content:']'}
 
@@ -22,12 +22,62 @@
     
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#33b884">
 <meta name="msapplication-TileColor" content="#33b884">
 <meta name="theme-color" content="#33b884">
+
+<style>
+  body {
+    margin-top: 24px;
+    margin-bottom: 18px;
+    line-height: 1.48;
+  }
+
+  div.header h1 {
+    margin-bottom: 18px;
+  }
+
+  section > header h1,
+  article h1:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0.62rem 0;
+  }
+
+  div.footer {
+    margin-top: 1rem;
+    padding-top: 0.55rem;
+    font-size: 0.9rem;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .footer-meta {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.95rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-carbon {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.45rem;
+  }
+
+  .footer-carbon #wcb {
+    margin: 0;
+  }
+</style>
+
+
 
 
 
@@ -52,8 +102,8 @@
         
         <section>
             
-<div class="posts-list">
-    <h1></h1>
+<article class="posts-list compact-list-page">
+    <h1>Posts</h1>
     <p>Stuff I find interesting</p>
 
 
@@ -93,163 +143,121 @@
         
         
         
-        <div class="year-section">
-            <button class="year-toggle" onclick="toggleYear('2026')">
-                <span class="toggle-icon" id="icon-2026">▼</span>
-                <h2>2026 (1 posts)</h2>
-            </button>
-
-            <div class="posts-year-list" id="posts-2026" style="display: block;">
+        <section class="year-section">
+            <h2>2026 <span>1 posts</span></h2>
+            <div class="item-list">
                 
-                <div class="post-item">
-                    <a href="/posts/where-san-francisco-airbnb-listings-offer-ac/" class="post-link">
-                        <h3 class="post-title">AAG 2026 and AirBnBs without AC</h3>
-                        
-                        <p class="post-date">March 21, 2026</p>
-                        
-                    </a>
-                </div>
+                <a href="/posts/where-san-francisco-airbnb-listings-offer-ac/" class="list-item-link">
+                    <span class="list-item-title">AAG 2026 and AirBnBs without AC</span>
+                    
+                    <span class="list-item-meta">Mar 21, 2026</span>
+                    
+                </a>
                 
             </div>
-        </div>
+        </section>
         
         
         
         
-        <div class="year-section">
-            <button class="year-toggle" onclick="toggleYear('2025')">
-                <span class="toggle-icon" id="icon-2025">▼</span>
-                <h2>2025 (1 posts)</h2>
-            </button>
-
-            <div class="posts-year-list" id="posts-2025" style="display: block;">
+        <section class="year-section">
+            <h2>2025 <span>1 posts</span></h2>
+            <div class="item-list">
                 
-                <div class="post-item">
-                    <a href="/posts/storm-tracking-and-the-iss/" class="post-link">
-                        <h3 class="post-title">Storm Tracking and the ISS</h3>
-                        
-                        <p class="post-date">July 20, 2025</p>
-                        
-                    </a>
-                </div>
+                <a href="/posts/storm-tracking-and-the-iss/" class="list-item-link">
+                    <span class="list-item-title">Storm Tracking and the ISS</span>
+                    
+                    <span class="list-item-meta">Jul 20, 2025</span>
+                    
+                </a>
                 
             </div>
-        </div>
+        </section>
         
     </div>
-</div>
+</article>
 
 <style>
+.compact-list-page h1 {
+    margin: 0 0 0.45rem;
+}
+
+.compact-list-page > p {
+    margin: 0 0 0.8rem;
+}
+
 .posts-by-year {
-    margin-top: 2rem;
+    margin-top: 0.8rem;
 }
 
 .year-section {
-    margin-bottom: 2rem;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    overflow: hidden;
+    margin-bottom: 0.85rem;
+    border-top: 1px solid #d6ddd8;
+    padding-top: 0.65rem;
 }
 
-.year-toggle {
-    width: 100%;
-    background: #f8f9fa;
-    border: none;
-    padding: 1rem;
-    text-align: left;
-    cursor: pointer;
+.year-section h2 {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: background-color 0.2s;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 0 0.5rem;
+    font-size: 1.08rem;
 }
 
-.year-toggle:hover {
-    background: #e9ecef;
+.year-section h2 span {
+    color: #777;
+    font-size: 0.86rem;
+    font-weight: 400;
 }
 
-.toggle-icon {
-    font-size: 0.8rem;
-    transition: transform 0.2s;
-    width: 1rem;
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem 0.75rem;
 }
 
-.toggle-icon.collapsed {
-    transform: rotate(-90deg);
-}
-
-.year-toggle h2 {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #333;
-}
-
-.posts-year-list {
-    transition: all 0.3s ease-out;
-    overflow: hidden;
-}
-
-.posts-year-list.hidden {
-    display: none;
-}
-
-.post-item {
-    border-bottom: 1px solid #f0f0f0;
-    padding: 1rem;
-    transition: background-color 0.2s;
-}
-
-.post-item:last-child {
-    border-bottom: none;
-}
-
-.post-item:hover {
-    background-color: #f8f9fa;
-}
-
-.post-link {
-    text-decoration: none;
+.list-item-link {
+    display: block;
+    padding: 0.45rem 0.55rem;
+    border: 1px solid #e2e7e3;
+    border-radius: 6px;
     color: inherit;
+    text-decoration: none;
+}
+
+.list-item-link:hover {
+    background: #f7faf8;
+}
+
+.list-item-title,
+.list-item-meta {
     display: block;
 }
 
-.post-title {
-    margin: 0 0 0.35rem 0;
-    font-size: 1.1rem;
-    color: #333;
+.list-item-title {
+    font-size: 0.96rem;
+    font-weight: 700;
+    line-height: 1.25;
 }
 
-.post-date {
-    margin: 0;
-    color: #999;
-    font-size: 0.9rem;
+.list-item-meta {
+    margin-top: 0.12rem;
+    color: #666;
+    font-size: 0.84rem;
+    line-height: 1.25;
 }
 
-.post-link:hover .post-title {
-    color: #007bff;
-}
-</style>
-
-<script>
-function toggleYear(year) {
-    const postsList = document.getElementById('posts-' + year);
-    const icon = document.getElementById('icon-' + year);
-
-    if (postsList.style.display === 'none') {
-        postsList.style.display = 'block';
-        icon.textContent = '▼';
-        icon.classList.remove('collapsed');
-    } else {
-        postsList.style.display = 'none';
-        icon.textContent = '►';
-        icon.classList.add('collapsed');
+@media only screen and (max-width: 640px) {
+    .item-list {
+        grid-template-columns: 1fr;
     }
 }
-</script>
+</style>
 
         </section>
     </div>
 <div class="footer">
+    <div class="footer-meta">
     
     
     <div class="footer-links">
@@ -262,10 +270,13 @@ function toggleYear(year) {
     
     <div class="copyright">© 2026 — Rahul Devajji — All rights reserved.</div>
     
+    </div>
 
+    <div class="footer-carbon">
     <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 <div id="wcb" class="carbonbadge"></div>
 
+    </div>
 
 </div>
 

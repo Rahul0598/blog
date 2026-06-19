@@ -22,12 +22,62 @@
     
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#33b884">
 <meta name="msapplication-TileColor" content="#33b884">
 <meta name="theme-color" content="#33b884">
+
+<style>
+  body {
+    margin-top: 24px;
+    margin-bottom: 18px;
+    line-height: 1.48;
+  }
+
+  div.header h1 {
+    margin-bottom: 18px;
+  }
+
+  section > header h1,
+  article h1:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0.62rem 0;
+  }
+
+  div.footer {
+    margin-top: 1rem;
+    padding-top: 0.55rem;
+    font-size: 0.9rem;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .footer-meta {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.95rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-carbon {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.45rem;
+  }
+
+  .footer-carbon #wcb {
+    margin: 0;
+  }
+</style>
+
+
 
 
 
@@ -52,11 +102,11 @@
         
         <section>
             
-<div class="readings-list">
+<article class="readings-list compact-list-page">
     <h1>My Reading List</h1>
-    <p>Here are the books I&rsquo;ve read, along with my thoughts and ratings. Click on any book to read my review/thoughts.</p>
+    <p>Books I&rsquo;ve read lately, with notes and thoughts.</p>
 
-    
+
     <div class="books-by-year">
         
         
@@ -71,6 +121,36 @@
             
             
             
+            
+            
+        
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+        
+            
+            
+            
                 
             
             
@@ -100,7 +180,7 @@
             
             
         
-        
+
         
         
             
@@ -112,228 +192,167 @@
             
         
         
+
         
         
         
         
-        
-        <div class="year-section">
-            <button class="year-toggle" onclick="toggleYear('2026')">
-                <span class="toggle-icon" id="icon-2026">▼</span>
-                <h2>2026 (1 books)</h2>
-            </button>
-            
-            <div class="books-list" id="books-2026" style="display: block;">
+        <section class="year-section">
+            <h2>2026 <span>6 books</span></h2>
+            <div class="item-list">
                 
-                <div class="book-item">
-                    <a href="http://rahuldevajji.com/readings/this-is-how-you-lose-a-time-war/" class="book-link">
-                        <h3 class="book-title">This Is How You Lose the Time War</h3>
-                        
-                        <p class="book-author">by Amal El-Mohtar and Max Gladstone</p>
-                        
-                        
-                        <p class="book-date">January 2026</p>
-                        
-                    </a>
-                </div>
+                <a href="/readings/the-diary-of-frida-kahlo/" class="list-item-link">
+                    <span class="list-item-title">The Diary of Frida Kahlo: An Intimate Self-Portrait</span>
+                    <span class="list-item-meta">by Frida Kahlo · Jun 2026</span>
+                </a>
                 
-            </div>
-        </div>
-        
-        
-        
-        
-        <div class="year-section">
-            <button class="year-toggle" onclick="toggleYear('2025')">
-                <span class="toggle-icon" id="icon-2025">▼</span>
-                <h2>2025 (5 books)</h2>
-            </button>
-            
-            <div class="books-list" id="books-2025" style="display: block;">
+                <a href="/readings/garden-spells/" class="list-item-link">
+                    <span class="list-item-title">Garden Spells</span>
+                    <span class="list-item-meta">by Sarah Addison Allen · Apr 2026</span>
+                </a>
                 
-                <div class="book-item">
-                    <a href="http://rahuldevajji.com/readings/a-psalm-for-the-wild-built/" class="book-link">
-                        <h3 class="book-title">A Psalm For The Wild Built</h3>
-                        
-                        <p class="book-author">by Becky Chambers</p>
-                        
-                        
-                        <p class="book-date">October 2025</p>
-                        
-                    </a>
-                </div>
+                <a href="/readings/semiosis/" class="list-item-link">
+                    <span class="list-item-title">Semiosis</span>
+                    <span class="list-item-meta">by Sue Burke · Apr 2026</span>
+                </a>
                 
-                <div class="book-item">
-                    <a href="http://rahuldevajji.com/readings/free-will/" class="book-link">
-                        <h3 class="book-title">Free Will</h3>
-                        
-                        <p class="book-author">by Sam Harris</p>
-                        
-                        
-                        <p class="book-date">September 2025</p>
-                        
-                    </a>
-                </div>
+                <a href="/readings/a-cloud-a-day/" class="list-item-link">
+                    <span class="list-item-title">A Cloud a Day</span>
+                    <span class="list-item-meta">by Gavin Pretor-Pinney · Jan 2026</span>
+                </a>
                 
-                <div class="book-item">
-                    <a href="http://rahuldevajji.com/readings/orbital/" class="book-link">
-                        <h3 class="book-title">Orbital</h3>
-                        
-                        <p class="book-author">by Samantha Harvey</p>
-                        
-                        
-                        <p class="book-date">July 2025</p>
-                        
-                    </a>
-                </div>
+                <a href="/readings/land-of-mirrors/" class="list-item-link">
+                    <span class="list-item-title">Land of Mirrors</span>
+                    <span class="list-item-meta">by María Medem · Jan 2026</span>
+                </a>
                 
-                <div class="book-item">
-                    <a href="http://rahuldevajji.com/readings/whale-and-the-reactor/" class="book-link">
-                        <h3 class="book-title">The Whale and the Reactor</h3>
-                        
-                        <p class="book-author">by Langdon Winner</p>
-                        
-                        
-                        <p class="book-date">May 2025</p>
-                        
-                    </a>
-                </div>
-                
-                <div class="book-item">
-                    <a href="http://rahuldevajji.com/readings/crossings/" class="book-link">
-                        <h3 class="book-title">Crossings</h3>
-                        
-                        <p class="book-author">by Ben Goldfarb</p>
-                        
-                        
-                        <p class="book-date">March 2025</p>
-                        
-                    </a>
-                </div>
+                <a href="/readings/this-is-how-you-lose-a-time-war/" class="list-item-link">
+                    <span class="list-item-title">This Is How You Lose the Time War</span>
+                    <span class="list-item-meta">by Amal El-Mohtar and Max Gladstone · Jan 2026</span>
+                </a>
                 
             </div>
-        </div>
+        </section>
+        
+        
+        
+        
+        <section class="year-section">
+            <h2>2025 <span>5 books</span></h2>
+            <div class="item-list">
+                
+                <a href="/readings/a-psalm-for-the-wild-built/" class="list-item-link">
+                    <span class="list-item-title">A Psalm For The Wild Built</span>
+                    <span class="list-item-meta">by Becky Chambers · Oct 2025</span>
+                </a>
+                
+                <a href="/readings/free-will/" class="list-item-link">
+                    <span class="list-item-title">Free Will</span>
+                    <span class="list-item-meta">by Sam Harris · Sep 2025</span>
+                </a>
+                
+                <a href="/readings/orbital/" class="list-item-link">
+                    <span class="list-item-title">Orbital</span>
+                    <span class="list-item-meta">by Samantha Harvey · Jul 2025</span>
+                </a>
+                
+                <a href="/readings/whale-and-the-reactor/" class="list-item-link">
+                    <span class="list-item-title">The Whale and the Reactor</span>
+                    <span class="list-item-meta">by Langdon Winner · May 2025</span>
+                </a>
+                
+                <a href="/readings/crossings/" class="list-item-link">
+                    <span class="list-item-title">Crossings</span>
+                    <span class="list-item-meta">by Ben Goldfarb · Mar 2025</span>
+                </a>
+                
+            </div>
+        </section>
         
     </div>
-</div>
+</article>
 
 <style>
+.compact-list-page h1 {
+    margin: 0 0 0.45rem;
+}
+
+.compact-list-page > p {
+    margin: 0 0 0.8rem;
+}
+
 .books-by-year {
-    margin-top: 2rem;
+    margin-top: 0.8rem;
 }
 
 .year-section {
-    margin-bottom: 2rem;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    overflow: hidden;
+    margin-bottom: 0.85rem;
+    border-top: 1px solid #d6ddd8;
+    padding-top: 0.65rem;
 }
 
-.year-toggle {
-    width: 100%;
-    background: #f8f9fa;
-    border: none;
-    padding: 1rem;
-    text-align: left;
-    cursor: pointer;
+.year-section h2 {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: background-color 0.2s;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 0 0.5rem;
+    font-size: 1.08rem;
 }
 
-.year-toggle:hover {
-    background: #e9ecef;
+.year-section h2 span {
+    color: #777;
+    font-size: 0.86rem;
+    font-weight: 400;
 }
 
-.toggle-icon {
-    font-size: 0.8rem;
-    transition: transform 0.2s;
-    width: 1rem;
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem 0.75rem;
 }
 
-.toggle-icon.collapsed {
-    transform: rotate(-90deg);
-}
-
-.year-toggle h2 {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #333;
-}
-
-.books-list {
-    transition: all 0.3s ease-out;
-    overflow: hidden;
-}
-
-.books-list.hidden {
-    display: none;
-}
-
-.book-item {
-    border-bottom: 1px solid #f0f0f0;
-    padding: 1rem;
-    transition: background-color 0.2s;
-}
-
-.book-item:last-child {
-    border-bottom: none;
-}
-
-.book-item:hover {
-    background-color: #f8f9fa;
-}
-
-.book-link {
-    text-decoration: none;
+.list-item-link {
+    display: block;
+    padding: 0.45rem 0.55rem;
+    border: 1px solid #e2e7e3;
+    border-radius: 6px;
     color: inherit;
+    text-decoration: none;
+}
+
+.list-item-link:hover {
+    background: #f7faf8;
+}
+
+.list-item-title,
+.list-item-meta {
     display: block;
 }
 
-.book-title {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
-    color: #333;
+.list-item-title {
+    font-size: 0.96rem;
+    font-weight: 700;
+    line-height: 1.25;
 }
 
-.book-author {
-    margin: 0 0 0.25rem 0;
+.list-item-meta {
+    margin-top: 0.12rem;
     color: #666;
-    font-style: italic;
+    font-size: 0.84rem;
+    line-height: 1.25;
 }
 
-.book-date {
-    margin: 0;
-    color: #999;
-    font-size: 0.9rem;
-}
-
-.book-link:hover .book-title {
-    color: #007bff;
-}
-</style>
-
-<script>
-function toggleYear(year) {
-    const booksList = document.getElementById('books-' + year);
-    const icon = document.getElementById('icon-' + year);
-    
-    if (booksList.style.display === 'none') {
-        booksList.style.display = 'block';
-        icon.textContent = '▼';
-        icon.classList.remove('collapsed');
-    } else {
-        booksList.style.display = 'none';
-        icon.textContent = '►';
-        icon.classList.add('collapsed');
+@media only screen and (max-width: 640px) {
+    .item-list {
+        grid-template-columns: 1fr;
     }
 }
-</script>
+</style>
 
         </section>
     </div>
 <div class="footer">
+    <div class="footer-meta">
     
     
     <div class="footer-links">
@@ -346,10 +365,13 @@ function toggleYear(year) {
     
     <div class="copyright">© 2026 — Rahul Devajji — All rights reserved.</div>
     
+    </div>
 
+    <div class="footer-carbon">
     <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 <div id="wcb" class="carbonbadge"></div>
 
+    </div>
 
 </div>
 

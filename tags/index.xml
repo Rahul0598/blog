@@ -9,6 +9,42 @@
     <copyright>© 2026 — Rahul Devajji — All rights reserved.</copyright>
     <lastBuildDate>Sun, 10 Apr 2022 02:56:07 -0400</lastBuildDate><atom:link href="http://rahuldevajji.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>art</title>
+      <link>http://rahuldevajji.com/tags/art/</link>
+      <pubDate>Sun, 07 Jun 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/tags/art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>non-fiction</title>
+      <link>http://rahuldevajji.com/tags/non-fiction/</link>
+      <pubDate>Sun, 07 Jun 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/tags/non-fiction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fantasy</title>
+      <link>http://rahuldevajji.com/tags/fantasy/</link>
+      <pubDate>Mon, 13 Apr 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/tags/fantasy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>science-fiction</title>
+      <link>http://rahuldevajji.com/tags/science-fiction/</link>
+      <pubDate>Mon, 13 Apr 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/tags/science-fiction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>data-viz</title>
       <link>http://rahuldevajji.com/tags/data-viz/</link>
       <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
@@ -27,20 +63,29 @@
     </item>
     
     <item>
+      <title>graphic novel</title>
+      <link>http://rahuldevajji.com/tags/graphic-novel/</link>
+      <pubDate>Wed, 07 Jan 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/tags/graphic-novel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nature</title>
+      <link>http://rahuldevajji.com/tags/nature/</link>
+      <pubDate>Wed, 07 Jan 2026 02:03:00 +0530</pubDate>
+      
+      <guid>http://rahuldevajji.com/tags/nature/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>romance</title>
       <link>http://rahuldevajji.com/tags/romance/</link>
       <pubDate>Sat, 03 Jan 2026 02:03:00 +0530</pubDate>
       
       <guid>http://rahuldevajji.com/tags/romance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>science-fiction</title>
-      <link>http://rahuldevajji.com/tags/science-fiction/</link>
-      <pubDate>Sat, 03 Jan 2026 02:03:00 +0530</pubDate>
-      
-      <guid>http://rahuldevajji.com/tags/science-fiction/</guid>
       <description></description>
     </item>
     
@@ -54,29 +99,11 @@
     </item>
     
     <item>
-      <title>fantasy</title>
-      <link>http://rahuldevajji.com/tags/fantasy/</link>
-      <pubDate>Sun, 12 Oct 2025 02:03:00 +0530</pubDate>
-      
-      <guid>http://rahuldevajji.com/tags/fantasy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>philosophy</title>
       <link>http://rahuldevajji.com/tags/philosophy/</link>
       <pubDate>Sun, 12 Oct 2025 02:03:00 +0530</pubDate>
       
       <guid>http://rahuldevajji.com/tags/philosophy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>non-fiction</title>
-      <link>http://rahuldevajji.com/tags/non-fiction/</link>
-      <pubDate>Tue, 02 Sep 2025 02:03:00 +0530</pubDate>
-      
-      <guid>http://rahuldevajji.com/tags/non-fiction/</guid>
       <description></description>
     </item>
     
@@ -113,15 +140,6 @@
       <pubDate>Sun, 16 Mar 2025 02:03:00 +0530</pubDate>
       
       <guid>http://rahuldevajji.com/tags/ecology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nature</title>
-      <link>http://rahuldevajji.com/tags/nature/</link>
-      <pubDate>Sun, 16 Mar 2025 02:03:00 +0530</pubDate>
-      
-      <guid>http://rahuldevajji.com/tags/nature/</guid>
       <description></description>
     </item>
     

@@ -2,8 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://rahuldevajji.com/posts/</loc>
-    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+    <loc>http://rahuldevajji.com/tags/art/</loc>
+    <lastmod>2026-06-07T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/readings/</loc>
+    <lastmod>2026-06-07T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/tags/non-fiction/</loc>
+    <lastmod>2026-06-07T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/</loc>
+    <lastmod>2026-06-07T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/readings/the-diary-of-frida-kahlo/</loc>
+    <lastmod>2026-06-07T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/tags/fantasy/</loc>
+    <lastmod>2026-04-13T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/readings/garden-spells/</loc>
+    <lastmod>2026-04-13T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/tags/science-fiction/</loc>
+    <lastmod>2026-04-13T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/readings/semiosis/</loc>
+    <lastmod>2026-04-13T02:03:00+05:30</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/posts/where-san-francisco-airbnb-listings-offer-ac/</loc>
     <lastmod>2026-03-21T00:00:00+00:00</lastmod>
@@ -14,16 +38,22 @@
     <loc>http://rahuldevajji.com/tags/gis/</loc>
     <lastmod>2026-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://rahuldevajji.com/</loc>
+    <loc>http://rahuldevajji.com/posts/</loc>
     <lastmod>2026-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://rahuldevajji.com/readings/</loc>
-    <lastmod>2026-01-03T02:03:00+05:30</lastmod>
+    <loc>http://rahuldevajji.com/readings/a-cloud-a-day/</loc>
+    <lastmod>2026-01-07T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/tags/graphic-novel/</loc>
+    <lastmod>2026-01-07T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/readings/land-of-mirrors/</loc>
+    <lastmod>2026-01-07T02:03:00+05:30</lastmod>
+  </url><url>
+    <loc>http://rahuldevajji.com/tags/nature/</loc>
+    <lastmod>2026-01-07T02:03:00+05:30</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/tags/romance/</loc>
-    <lastmod>2026-01-03T02:03:00+05:30</lastmod>
-  </url><url>
-    <loc>http://rahuldevajji.com/tags/science-fiction/</loc>
     <lastmod>2026-01-03T02:03:00+05:30</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/readings/this-is-how-you-lose-a-time-war/</loc>
@@ -35,16 +65,10 @@
     <loc>http://rahuldevajji.com/readings/a-psalm-for-the-wild-built/</loc>
     <lastmod>2025-10-12T02:03:00+05:30</lastmod>
   </url><url>
-    <loc>http://rahuldevajji.com/tags/fantasy/</loc>
-    <lastmod>2025-10-12T02:03:00+05:30</lastmod>
-  </url><url>
     <loc>http://rahuldevajji.com/tags/philosophy/</loc>
     <lastmod>2025-10-12T02:03:00+05:30</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/readings/free-will/</loc>
-    <lastmod>2025-09-02T02:03:00+05:30</lastmod>
-  </url><url>
-    <loc>http://rahuldevajji.com/tags/non-fiction/</loc>
     <lastmod>2025-09-02T02:03:00+05:30</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/readings/orbital/</loc>
@@ -69,9 +93,6 @@
     <lastmod>2025-03-16T02:03:00+05:30</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/tags/ecology/</loc>
-    <lastmod>2025-03-16T02:03:00+05:30</lastmod>
-  </url><url>
-    <loc>http://rahuldevajji.com/tags/nature/</loc>
     <lastmod>2025-03-16T02:03:00+05:30</lastmod>
   </url><url>
     <loc>http://rahuldevajji.com/tags/urban-planning/</loc>
