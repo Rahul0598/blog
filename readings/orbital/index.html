@@ -120,18 +120,6 @@
                     <h1 id="orbital-a-view-from-above">Orbital: A View from Above</h1>
 <p><em>I finished the book, with some difficulty.</em> This book reminded me of an event from my childhood. I might have been 5 years old when my mom tasked me with splitting almonds using a huge tailor&rsquo;s scissors. Naturally I sliced up a piece of my left index finger (whose mark I still carry today). After crying, and getting it bandaged, my father sat me in front of his laptop with Google Earth software showing Mars. It was cool piece of software which let you explore and zoom through the deep canyons of Mars, and gave you this feeling of endlessness.</p>
 <p>Reading this book gives you a similar experience but with earth. The author literally lists out everything you can see from the POV of astronauts in the space station. Like &ldquo;oh look there&rsquo;s lake Michigan! So cool!.&rdquo; It is pretty interesting for a few minutes, and then you get bored.</p>
-<p>Anyway, below is a real-time visualization of the ISS orbiting our planet, complete with city lights visible on the night side.</p>
-<div style="height: 600px; width: 100%; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; margin: 20px 0;">
-<iframe 
-    src="/readings/iss_animation.html" 
-    width="100%" 
-    height="100%" 
-    frameborder="0"
-    style="border: none;">
-    Your browser does not support iframes. Please visit the <a href="/readings/iss_animation.html">ISS Animation</a> directly.
-</iframe>
-</div>
-<p><em>The visualization above shows the International Space Station&rsquo;s real-time position, tracked via API. Use your mouse to rotate the view and scroll to zoom in/out.</em></p>
 
                 </div>
 
@@ -143,6 +131,19 @@
                 <img src="/images/books/orbital.jpg" alt="Orbital" class="book-cover">
                 
 
+                
+
+                
+
+                
+                <div class="book-animation">
+                    <iframe 
+                        src="/posts/orbital/iss_animation.html" 
+                        class="book-animation-frame"
+                        loading="lazy"
+                        title="Animation">
+                    </iframe>
+                </div>
                 
 
                 
@@ -164,7 +165,7 @@
 
     .book-content {
         display: grid;
-        grid-template-columns: 1fr 250px;
+        grid-template-columns: minmax(0, 1fr) 280px;
         gap: 3rem;
         align-items: start;
     }
@@ -221,7 +222,7 @@
 
     .book-cover {
         width: 100%;
-        max-width: 200px;
+        max-width: 280px;
         height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -273,6 +274,26 @@
         color: #666;
     }
 
+    .book-animation {
+        margin-top: 0.5rem;
+    }
+
+    .book-animation-frame {
+        width: 200px;
+        height: 200px;
+        border: none;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .book-spotify {
+        margin-top: 0.75rem;
+        width: 100%;
+        max-width: 280px;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
     @media (max-width: 768px) {
         .book-content {
             grid-template-columns: 1fr;
@@ -286,7 +307,11 @@
         }
 
         .book-cover {
-            max-width: 250px;
+            max-width: 280px;
+        }
+
+        .book-spotify {
+            margin: 0.75rem auto 0;
         }
     }
 </style>

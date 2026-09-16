@@ -132,6 +132,10 @@
                 
 
                 
+
+                
+
+                
             </div>
         </div>
     </div>
@@ -150,7 +154,7 @@
 
     .book-content {
         display: grid;
-        grid-template-columns: 1fr 250px;
+        grid-template-columns: minmax(0, 1fr) 280px;
         gap: 3rem;
         align-items: start;
     }
@@ -207,7 +211,7 @@
 
     .book-cover {
         width: 100%;
-        max-width: 200px;
+        max-width: 280px;
         height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -259,6 +263,26 @@
         color: #666;
     }
 
+    .book-animation {
+        margin-top: 0.5rem;
+    }
+
+    .book-animation-frame {
+        width: 200px;
+        height: 200px;
+        border: none;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .book-spotify {
+        margin-top: 0.75rem;
+        width: 100%;
+        max-width: 280px;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
     @media (max-width: 768px) {
         .book-content {
             grid-template-columns: 1fr;
@@ -272,7 +296,11 @@
         }
 
         .book-cover {
-            max-width: 250px;
+            max-width: 280px;
+        }
+
+        .book-spotify {
+            margin: 0.75rem auto 0;
         }
     }
 </style>
