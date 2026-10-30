@@ -21,13 +21,15 @@
 
     
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-dark-32x32.png?v=2" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-dark-16x16.png?v=2" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" media="(prefers-color-scheme: light)">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-dark.png?v=2" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+<link rel="icon" href="/favicon.ico?v=2" sizes="any">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#33b884">
 <meta name="msapplication-TileColor" content="#33b884">
 <meta name="theme-color" content="#33b884">
 
@@ -145,7 +147,7 @@
 <p>That got me wondering: how often has Bloomington&rsquo;s weather swung back and forth like this? And are these swings becoming more common?</p>
 <link rel="stylesheet" href="/posts/whiplash/css/post.css">
 <script defer src="/posts/whiplash/js/post.js"></script>
-<div data-station-context>To explore those questions, I used daily high temperatures from the Bloomington IU weather station within the city. I chose IU for its longer historical record, which begins in 1895.</div>
+<div data-station-context>To find out, I used daily high temperatures from the Bloomington IU weather station. Its record starts in 1895.</div>
 <aside class="whiplash-stations" data-station-map aria-label="Bloomington IU weather station location" inert>
   <button type="button" class="whiplash-map-close" data-map-close aria-label="Hide station map">Close ×</button>
   <figure>
@@ -162,31 +164,11 @@
   <p><a href="/posts/whiplash/stations.svg">View the station map</a>.</p>
 </noscript>
 
-<p>The chart below looks for sharp temperature swings followed by a reversal within a few days. Move the threshold to explore when these cycles happened and how intense they were.</p>
+<p>I looked for a sharp change in daily highs followed by a change back. By default, each change must be at least 27°F and take no more than three days. Each point below is one such reversal. Move the threshold to explore other sizes.</p>
 <link rel="stylesheet" href="/posts/whiplash/css/whiplash.css">
 <script defer src="/posts/whiplash/js/vendor/d3.v7.9.0.min.js"></script>
-<script defer src="/posts/whiplash/js/whiplash.js"></script><div id="whiplash-1" class="whiplash" data-whiplash data-source="/posts/whiplash/data/bloomington-whiplash.json">
-  <details class="bw-methods">
-    <summary>Methods</summary>
-    <p>A cycle is warm-cold-warm or cold-warm-cold, with the threshold met on both temperature changes. Intensity is the
-      smaller of the two absolute changes: 71 → 27 → 76°F changes by 44°F, then 49°F, so its intensity is 44°F. This
-      ensures both changes are substantial. Overlapping candidates are consolidated, strongest first.</p>
-    <p>Full-cycle span is the elapsed time from the first temperature to the final temperature, including both changes.
-      Four days cooling followed by five days warming spans nine days. The median summarizes all detected cycles in the
-      record under the current settings.</p>
-    <p data-role="fit-scope"></p>
-    <p>R² is the fraction of variation between annual values explained by the fitted curve. Linear trends are solid when
-      their 95% change interval excludes zero, dashed otherwise.</p>
-    <p>The default is a 27°F (15°C) minimum change in each direction.</p>
-    <p>Source: <a href="https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00120784.dly">NOAA GHCN-Daily, Bloomington
-        IU</a>. Reporting times: <a
-        href="https://www.ncei.noaa.gov/access/homr/services/station/search?qid=GHCND:USC00120784&amp;date=all">NOAA
-        station history</a>.
-      <a href="/posts/whiplash/data/reporting-windows.json">Verification and processing notes</a>.
-      Downloaded October 18, 2026. Click a point to inspect it; drag either end of the time
-      brush to zoom.
-    </p>
-  </details>
+<script defer src="/posts/whiplash/js/whiplash.js?v=8b18dc73d5004235e471f4f902e703fb"></script><div id="whiplash-1" class="whiplash" data-whiplash data-source="/posts/whiplash/data/bloomington-whiplash.json">
+  <p>Select a point to see the temperatures behind it.</p>
   <p class="bw-record" data-role="record-label">Bloomington temperature record, 1895-2026.</p>
   <p class="bw-period" data-role="window-label"></p>
   <p class="bw-status" role="status" data-role="status">Loading observations…</p>
@@ -215,38 +197,198 @@
   <p id="whiplash-1-count" data-role="event-count" aria-live="polite"></p>
   <section class="bw-event-detail" data-role="event-detail">
     <div class="bw-event-heading">
-      <h3>Selected cycle</h3>
+      <h3>One cycle, up close</h3>
       <div><button type="button" data-role="event-prev">Previous</button><button type="button"
           data-role="event-next">Next</button></div>
     </div>
     <div class="bw-chart" data-role="event-chart"></div>
     <p class="bw-selected" data-role="selection" aria-live="polite"></p>
   </section>
-  <h3>Annual mean intensity</h3>
-  <p class="bw-fit" data-role="intensity-fit"></p>
-  <div class="bw-chart" data-role="intensity-chart"></div>
-  <h3>Annual frequency</h3>
-  <p class="bw-fit" data-role="frequency-fit"></p>
+  <p>With the default settings, the strongest cycles tie in 2019 and 2026. Daily highs went 46 → 2 → 48°F on January 29–February 3, 2019, and 71 → 27 → 76°F on March 16–21, 2026. Both cycles had a smaller change of 44°F.</p>
+  <p>With those same settings, warm-cold-warm cycles outnumber cold-warm-cold cycles, 133 to 101. The largest single change within three days was a 59°F rise in January 1972, from −7°F to 52°F.</p>
+  <h3>Are reversals happening more often?</h3>
+  <p>Each point shows the number of cycles in a complete year with at least 95% of daily highs available.</p>
   <div class="bw-chart" data-role="frequency-chart"></div>
+  <p data-role="frequency-story"></p>
+  <p class="bw-fit" data-role="frequency-fit"></p>
+  <details class="bw-methods">
+    <summary>Methods</summary>
+    <p>A cycle is warm-cold-warm or cold-warm-cold, with the threshold met on both temperature changes. Intensity is the
+      smaller of the two absolute changes: 71 → 27 → 76°F changes by 44°F, then 49°F, so its intensity is 44°F. This
+      ensures both changes are substantial. Overlapping candidates are consolidated, strongest first.</p>
+    <p>Full-cycle span is the elapsed time from the first temperature to the final temperature, including both changes.
+      Four days cooling followed by five days warming spans nine days. The median summarizes all detected cycles in the
+      record under the current settings.</p>
+    <p data-role="fit-scope"></p>
+    <p>R² is the fraction of variation between annual values explained by the fitted curve. Linear trends are solid when
+      their 95% change interval excludes zero, dashed otherwise.</p>
+    <p>The default is a 27°F (15°C) minimum change in each direction.</p>
+    <p>Source: <a href="https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00120784.dly">NOAA GHCN-Daily, Bloomington
+        IU</a>. Reporting times: <a
+        href="https://www.ncei.noaa.gov/access/homr/services/station/search?qid=GHCND:USC00120784&amp;date=all">NOAA
+        station history</a>.
+      <a href="/posts/whiplash/data/reporting-windows.json">Verification and processing notes</a>.
+      Downloaded October 18, 2026. Click a point to inspect it; drag either end of the time
+      brush to zoom.
+    </p>
+  </details>
+  <h3>Are the swings getting larger?</h3>
+  <p>For each cycle, I use the smaller of its two temperature changes. The chart shows the average for each year with at least one cycle.</p>
+  <div class="bw-chart" data-role="intensity-chart"></div>
+  <p data-role="intensity-story"></p>
+  <p class="bw-fit" data-role="intensity-fit"></p>
+  <section class="bw-return-period" aria-labelledby="whiplash-1-return-heading">
+  <h3 id="whiplash-1-return-heading">Have large reversals become more common?</h3>
+  <p>Choose a minimum change to compare how often reversals occurred at the beginning and end of the record.</p>
+  <label class="bw-return-control">Minimum change in both directions
+    <select data-control="return-intensity" aria-label="Intensity for the return-period comparison">
+      <option value="20">20°F</option><option value="27">27°F</option><option value="30">30°F</option><option value="35">35°F</option><option value="40" selected>40°F</option><option value="45">45°F</option><option value="50">50°F</option>
+    </select>
+  </label>
+  <p class="bw-period" data-role="return-history-duration"></p>
+  <div class="bw-era-scroll" tabindex="0" role="region" aria-label="Earlier and recent recurrence estimates">
+    <table class="bw-era-table">
+      <thead><tr><th scope="col">Period</th><th scope="col">Years with a cycle</th><th scope="col">Annual chance (95% interval)</th><th scope="col">Return period</th></tr></thead>
+      <tbody data-role="return-history-rows"></tbody>
+    </table>
+  </div>
+  <p data-role="return-history-summary" aria-live="polite"></p>
+  <p class="bw-period">The annual chance is the fraction of qualifying years with a cycle. The intervals show uncertainty in that fraction. “Not estimable” means no qualifying year contained a cycle; it does not mean the event could never happen.</p>
+  <p class="bw-period">The 2019 and 2026 cycles are in the timeline above. Their years are excluded here because they lack enough daily observations or are incomplete.</p>
+  <p>The chart repeats this calculation for each 30-year window. Each point is placed at the last year of its window.</p>
+  <div class="bw-chart" data-role="return-history-chart"></div>
+  <p class="bw-fit" data-role="return-history-detail" aria-live="polite"></p>
+  <p data-role="return-history-reading"></p>
+  <details class="bw-methods" data-return-overview>
+  <summary>Return periods across the full record</summary>
+  <p class="bw-fit" data-role="return-period-summary" aria-live="polite"></p>
+  <p class="bw-period" data-role="return-period-scope"></p>
+  <div class="bw-chart" data-role="return-period-chart"></div>
+  <p class="bw-fit" data-role="return-period-detail" aria-live="polite"></p>
+  <p class="bw-period">This summarizes the observed record. Estimates for the largest changes depend on very few years and do not predict when the next event will occur.</p>
+  </details>
+  <details class="bw-methods bw-return-methods">
+    <summary>How return periods are calculated</summary>
+    <p>For each eligible year, take the strongest detected reversal cycle, assigned to the year of its turning point.
+      For a chosen intensity, count years containing at least one cycle that meets or exceeds it. Divide that count by
+      the total eligible years to get the observed annual exceedance fraction p; the empirical annual return period is 1/p.
+      Years with no qualifying cycle remain in the denominator. This measures recurrence of years with a cycle, rather
+      than the average spacing between individual cycles. See the <a href="https://www.weather.gov/owp/hdsc_faqs#:~:text=3%2E1%20What%20is%20the%20difference%20between%20Annual%20Exceedance%20Probability%20%28AEP%29%20and%20Average%20Recurrence%20Interval%20%28ARI%29%3F">NWS explanation of annual exceedance and recurrence</a> for that distinction.</p>
+    <p>The intensity threshold and maximum days for each change update this panel. It uses the same full-record years
+      with at least 95% valid observations as the trend fits, including years with zero cycles. Cycles in excluded years
+      remain visible in the timeline but do not enter these estimates; for example, the 2019 and 2026 peaks are excluded.
+      Missing observations can still hide a year's strongest cycle. No probability distribution is fitted and no return
+      period is extrapolated beyond observed intensities. With zero exceeding years, a finite return period cannot be estimated.</p>
+    <p>The comparison above uses the first and last 30-calendar-year windows anchored to the first and last eligible
+      years. Each point in the history chart repeats that calculation for the preceding 30 calendar years, ending in
+      the plotted year. At least 20 of those years must meet the 95% daily-data coverage rule; other windows are gaps.
+      Counts are divided by the number of eligible years in that window, not by 30 automatically. The time brush does
+      not change these windows. The comparison has its own intensity selector and shares the maximum-days setting
+      above; the folded full-record curve follows the timeline's intensity threshold.</p>
+    <p>The table's approximate 95% intervals use the <a href="https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm">Wilson binomial method</a>.
+      They assume independent years with a common probability within each window, and do not account for serial
+      dependence, station changes or missing extremes. Overlapping rolling windows share observations and are not
+      independent samples. These intervals are descriptive guides, rather than a formal test of a trend or a change between eras.</p>
+    <p>A 10-year annual return period means a historical exceedance fraction of 10%, not a regular ten-year schedule.
+      Treating that fraction as a probability for a future year would assume stable conditions; this record's changing
+      frequency makes that assumption questionable. The curve is descriptive and has no confidence band.</p>
+  </details>
+  </section>
   <div class="bw-tooltip" role="tooltip" data-role="tooltip" hidden></div>
   <noscript>This chart needs JavaScript. The full Bloomington IU record contains 234 complete cycles with both changes
     at least 27°F (15°C) and each taking at most three days.</noscript>
 </div>
-<p>With the default threshold of 27°F (15°C) in both directions, and at most three days for each change:</p>
+
+<h2 id="what-those-weeks-felt-like">What those weeks felt like</h2>
+<p>Local reports describe some of the cold and warm spells behind these swings:</p>
 <ul>
-<li>Cycles are becoming more frequent: the fitted annual count rises by about 2.1 cycles between 1897 and 2025.</li>
-<li>The intensity trend is less clear: the fitted mean intensity rises by about 0.8°F between 1897 and 2025, but its uncertainty includes no change.</li>
-<li>Warm-cold-warm is more common than cold-warm-cold: 133 versus 101 cycles.</li>
-<li>The strongest complete cycles tie in 2026 and 2019: 71 → 27 → 76°F on March 16-21, 2026, and 46 → 2 → 48°F on January 29-February 3, 2019. Both have a 44°F minimum change, with two days of cooling and three of warming.</li>
-<li>The biggest single change within three days happened in 1972: a 59°F rise, from -7 to 52°F on January 16-19.</li>
-</ul>
-<p>Bloomington has a long history of snip-snap weather, including bigger single swings decades ago. With this definition, sharp reversals are becoming more frequent.</p>
-<p>Local reporting puts these episodes in context:</p>
-<ul>
-<li><a href="https://bsquarebulletin.com/late-january-cold-sets-record-for-bloomington/">The B Square: “Late January cold sets record for Bloomington”</a> (January 31, 2019). Reports the IU station’s 2°F daily high, the cold turning point in the 2019 cycle above. It documents the cold phase of that reversal.</li>
+<li><a href="https://bsquarebulletin.com/late-january-cold-sets-record-for-bloomington/">The B Square: “Late January cold sets record for Bloomington”</a> (January 31, 2019). Reports the IU station’s 2°F daily high, the cold turning point in the 2019 reversal above.</li>
 <li><a href="https://www.wrtv.com/weather/march-weather-madness-from-snow-to-flooding-to-storms/">WRTV: “March weather madness: From snow to flooding to storms”</a> (March 16-17, 2026). A downtown Indianapolis resident, walking in snow, recalls sunbathing in shorts just two days earlier. The story explicitly calls the conditions “weather whiplash.”</li>
 <li><a href="https://www.wrtv.com/news/local-news/why-have-there-been-so-many-wild-weather-swings-in-march-in-indianapolis/">WRTV: “Why have there been so many wild weather swings in March in Indianapolis?”</a> (March 25, 2026). An NWS meteorologist discusses Indianapolis’s March 22 record high of 88°F and a rare 50°F spread down to 38°F. That comparison uses a high and a low, whereas the charts here compare daily highs.</li>
 </ul>
+<h2 id="iu-and-the-airport">IU and the airport</h2>
+<p>Would the airport show the same swings? Its station sits in a more open setting than IU&rsquo;s. The charts compare daily highs on dates when both stations had valid readings.</p>
+<link rel="stylesheet" href="/posts/whiplash/css/comparison.css">
+<script defer src="/posts/whiplash/js/comparison.js?v=09478c2189acf7bf7c21c2df164a6397"></script>
+<section class="whiplash wc-comparison" data-station-comparison data-source="/posts/whiplash/data/station-comparison.json"
+  aria-label="IU and KBMG station comparison">
+  <p>These are two specific station sites: IU within Bloomington and KBMG at Monroe County Airport. Both use daily
+    highs, aligned to IU’s reporting day ending at 7 a.m. local time.</p>
+  <div class="wc-aerials">
+    <figure>
+      <div class="wc-aerial">
+        <a href="/posts/whiplash/images/iu-aerial.jpg"><img src="/posts/whiplash/images/iu-aerial.jpg" width="700"
+            height="700" loading="lazy"
+            alt="2025 aerial view around the IU weather station: campus buildings, parking areas, trees and playing fields."></a>
+        <span class="wc-marker" aria-hidden="true"></span><span class="wc-north" aria-hidden="true">N ↑</span><span
+          class="wc-scale" aria-hidden="true">200 m</span>
+      </div>
+      <figcaption>Bloomington IU · campus surroundings</figcaption>
+    </figure>
+    <figure>
+      <div class="wc-aerial">
+        <a href="/posts/whiplash/images/airport-aerial.jpg"><img src="/posts/whiplash/images/airport-aerial.jpg" width="700"
+            height="700" loading="lazy"
+            alt="2025 aerial view around the KBMG weather station: open grass beside airport runways, with woodland farther west."></a>
+        <span class="wc-marker" aria-hidden="true"></span><span class="wc-north" aria-hidden="true">N ↑</span><span
+          class="wc-scale" aria-hidden="true">200 m</span>
+      </div>
+      <figcaption>KBMG · open airport surroundings</figcaption>
+    </figure>
+  </div>
+  <p class="wc-imagery-note">2025 aerial photography from the <a
+      href="https://www.in.gov/gis/geoinsights/posts/indianas-imagery-services/">Indiana Geographic Information
+      Office</a> (CC0). Both views span approximately 1 km, north up. Dots mark current NOAA station coordinates; they
+    do not describe historical station locations. <a href="/posts/whiplash/data/station-imagery.json">Imagery and
+      coordinate sources</a>.</p>
+  <p class="bw-period">19 qualifying years, 2005–2024 · 2019 omitted · 6,875 paired days</p>
+  <h3>Daily high: IU minus airport</h3>
+  <p class="bw-period">Above zero = IU warmer · below zero = IU cooler</p>
+  <div class="bw-chart" data-comparison="temperature"></div>
+  <p class="wc-summary" data-comparison="summary" role="status">Comparing daily highs…</p>
+  <div class="wc-control">
+    <h3>Size of temperature changes: IU minus airport</h3>
+    <label>Compare highs
+      <select data-comparison="lag" aria-label="Days between compared daily highs">
+        <option value="1">1 day apart</option>
+        <option value="2">2 days apart</option>
+        <option value="3" selected>3 days apart</option>
+      </select>
+    </label>
+  </div>
+  <p class="bw-period">Above zero = larger changes at IU · below zero = larger at the airport</p>
+  <div class="bw-chart" data-comparison="changes"></div>
+  <p class="wc-summary" data-comparison="change-summary" role="status">Comparing temperature changes…</p>
+  <p class="wc-inspect" data-comparison="inspect" aria-live="polite">Each point is an annual mean. Hover, tap or focus a
+    point for both station values. Gaps mark excluded years.</p>
+  <details class="bw-methods">
+    <summary>Comparison methods and sources</summary>
+    <p>IU provides official daily maxima in <a
+        href="https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00120784.dly">GHCN-Daily</a>, rather than an hourly
+      GHCNh series. KBMG uses <a
+        href="https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/access/by-station/GHCNh_USW00003893_por.psv">GHCNh
+        observations</a>, downloaded October 18, 2026. Its highest accepted reading is calculated in the same
+      preceding-day 7 a.m. to reporting-day 7 a.m. window. UTC timestamps are converted using
+      America/Indiana/Indianapolis, including daylight-saving changes.</p>
+    <p>Both series are rounded to whole °F. Airport days require at least 90% hourly coverage, no gap over three hours,
+      and readings within the official daily temperature bounds (2°F tolerance). A year must have valid paired highs on
+      at least 95% of its days. Every comparison uses the same dates at both stations; incomplete years and missing data
+      are excluded.</p>
+    <p>The lower chart averages |T(t) - T(t - n)| for the selected number of calendar days, requiring valid highs on
+      every intervening date at both stations. It measures a single change, rather than a complete reversal cycle.
+      Overall averages weight each paired day or change equally.</p>
+    <p>These small differences do not establish a citywide heat-island effect. IU’s official daily maximum can differ
+      from the highest sampled airport reading, and station instruments, moves and exposure differ. Daily highs also
+      leave out nighttime warmth, when urban heat retention can be more pronounced. <a
+        href="https://www.epa.gov/heatislands/what-are-heat-islands">EPA heat-island context</a> · <a
+        href="/posts/whiplash/data/station-comparison.json">Download paired summaries and processing notes</a>.</p>
+  </details>
+  <noscript>The comparison charts need JavaScript. Paired daily highs average 63.85°F at IU and 64.06°F at KBMG. Mean
+    absolute three-day changes are 9.58°F and 9.45°F, respectively.</noscript>
+</section>
+<p>These two stations don&rsquo;t describe every part of Bloomington. Daily highs also leave out nighttime temperatures.</p>
+<h2 id="what-i-take-from-this">What I take from this</h2>
+<p>With the default definition, reversals have become more frequent at the IU station. Their average size shows no clear trend. There are too few reversals of at least 40°F in both directions to draw a firm conclusion about how their frequency has changed.</p>
 
 </article>
 
